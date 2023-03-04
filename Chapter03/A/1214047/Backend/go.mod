@@ -1,4 +1,4 @@
-module github.com/harisriyoni/ws/chapter03/A/1214047/Backend
+module github.com/harisriyoni/ws/chapter03/A/1214047/backend
 
 go 1.20
 
