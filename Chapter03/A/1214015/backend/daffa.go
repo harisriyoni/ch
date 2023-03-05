@@ -6,7 +6,6 @@ import (
 	"os"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -30,25 +29,48 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) (InsertedID interface{}) {
-	var presensi Presensi
+func InsertUser(nm string, gnr string, eml string, nhp string) (InsertedID interface{}) {
+	var user User
+	user.Nama = nm
+	user.Gender = gnr
+	user.Email = eml
+	user.NoHp = nhp
 
-	presensi.Latitude = long
-	presensi.Longitude = lat
-	presensi.Location = lokasi
-	presensi.Phone_number = phonenumber
-	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
-	presensi.Checkin = checkin
-	presensi.Biodata = biodata
-	return InsertOneDoc("adorable", "presensi", presensi)
+	return InsertOneDoc("dbuser", "user", user)
 }
 
-func GetKaryawanFromPhoneNumber(phone_number string) (staf Presensi) {
-	karyawan := MongoConnect("adorable").Collection("presensi")
-	filter := bson.M{"phone_number": phone_number}
-	err := karyawan.FindOne(context.TODO(), filter).Decode(&staf)
-	if err != nil {
-		fmt.Printf("getKaryawanFromPhoneNumber: %v\n", err)
-	}
-	return staf
+func InsertPembayaran(sts string, tbr string) (InsertedID interface{}) {
+	var pembayaran Pembayaran
+	pembayaran.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
+	pembayaran.Status = sts
+	pembayaran.TotalBayar = tbr
+
+	return InsertOneDoc("dbpembayaran", "pembayaran", pembayaran)
+}
+
+func InsertPendaftaran(nis string, nik string, nsa string) (InsertedID interface{}) {
+	var pendaftaran Pendaftaran
+	pendaftaran.Nis = nis
+	pendaftaran.Nik = nik
+	pendaftaran.NamaSiswa = nsa
+
+	return InsertOneDoc("dbpendaftaran", "pendaftaran", pendaftaran)
+}
+
+func InsertPengumuman(hsi string, nli string, pgm string) (InsertedID interface{}) {
+	var pengumuman Pengumuman
+	pengumuman.HasilSeleksi = hsi
+	pengumuman.Nilai = nli
+	pengumuman.Program = pgm
+
+	return InsertOneDoc("dbpengumuman", "pengumuman", pengumuman)
+}
+
+func InsertProgramKursus(nks string, jks string, pgr string) (InsertedID interface{}) {
+	var programkursus ProgramKursus
+	programkursus.NamaKursus = nks
+	programkursus.JenjangKursus = jks
+	programkursus.Pengajar = pgr
+
+	return InsertOneDoc("dbprogramkursus", "programkursus", programkursus)
 }
