@@ -32,26 +32,34 @@ func InsertOneDoc(db string, collection string, doc interface{}) interface{} {
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) interface{} {
-	var presensi Presensi
-	presensi.Latitude = long
-	presensi.Longitude = lat
-	presensi.Location = lokasi
-	presensi.Phone_number = phonenumber
-	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
-	presensi.Checkin = checkin
-	presensi.Biodata = biodata
-	return InsertOneDoc("adorable", "presensi", presensi)
+func InsertTagihan(pembeli string, daftarBarang []Barang) interface{} {
+	var tagihan Tagihan
+	tagihan.Pembeli = pembeli
+	tagihan.DaftarBarang = daftarBarang
+	tagihan.TanggalTagihan = primitive.NewDateTimeFromTime(time.Now().UTC())
+	return InsertOneDoc("mydatabase", "tagihan", tagihan)
 }
 
-func GetKaryawanFromPhoneNumber(phone_number string) Presensi {
-	var staf Presensi
-	karyawan := MongoConnect("adorable").Collection("presensi")
-	filter := bson.M{"phone_number": phone_number}
-	err := karyawan.FindOne(context.Background(), filter).Decode(&staf)
+func GetTagihanByPembeli(pembeli string) []Tagihan {
+	var tagihans []Tagihan
+	collection := MongoConnect("mydatabase").Collection("tagihan")
+	filter := bson.M{"pembeli": pembeli}
+	cur, err := collection.Find(context.Background(), filter)
 	if err != nil {
-		fmt.Printf("getKaryawanFromPhoneNumber: %v\n", err)
-		return Presensi{}
+		fmt.Printf("GetTagihanByPembeli: %v\n", err)
+		return nil
 	}
-	return staf
+	for cur.Next(context.Background()) {
+		var tagihan Tagihan
+		err := cur.Decode(&tagihan)
+		if err != nil {
+			fmt.Printf("GetTagihanByPembeli: %v\n", err)
+			return nil
+		}
+		tagihans = append(tagihans, tagihan)
+	}
+	if len(tagihans) == 0 {
+		return nil
+	}
+	return tagihans
 }
