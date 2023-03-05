@@ -1,13 +1,11 @@
-package type
+package main
 
 import (
 	"context"
 	"fmt"
 	"os"
-	"time"
 
 	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -40,7 +38,7 @@ func InsertNilai(nama_matkul string, kode_matkul float64, nama_dosen string, sks
 	return InsertOneDoc("adorable", "nilai", nilai)
 }
 
-func GetDhsFromKode_matkul(kode_matkul string) (Dhs) {
+func GetDhsFromKode_matkul(kode_matkul string) Dhs {
 	dhs := MongoConnect("adorable").Collection("nilai")
 	filter := bson.M{"phone_number": phone_number}
 	err := dhs.FindOne(context.TODO(), filter).Decode(&staf)
