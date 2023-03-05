@@ -1,4 +1,4 @@
-package main
+package type
 
 import (
 	"context"
@@ -19,7 +19,7 @@ func MongoConnect(dbname string) (db *mongo.Database) {
 	if err != nil {
 		fmt.Printf("MongoConnect: %v\n", err)
 	}
-	return client.Database(dbname)
+	return client.Database(Dhs)
 }
 
 func InsertOneDoc(db string, collection string, doc interface{}) (insertedID interface{}) {
@@ -30,24 +30,22 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) (InsertedID interface{}) {
-	var presensi Presensi
-	presensi.Latitude = long
-	presensi.Longitude = lat
-	presensi.Location = lokasi
-	presensi.Phone_number = phonenumber
-	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
-	presensi.Checkin = checkin
-	presensi.Biodata = biodata
-	return InsertOneDoc("adorable", "presensi", presensi)
+func InsertNilai(nama_matkul string, kode_matkul float64, nama_dosen string, sks Dhs) (InsertedID interface{}) {
+	var Nilai Nilai
+	nilai.ID = ID
+	nilai.Nama_matkul = nama_matkul
+	nilai.Kode_matkul = kode_matkul
+	nilai.Sks = sks
+	nilai.Grade = grade
+	return InsertOneDoc("adorable", "nilai", nilai)
 }
 
-func GetKaryawanFromPhoneNumber(phone_number string) (staf Karyawan) {
-	karyawan := MongoConnect("adorable").Collection("presensi")
+func GetDhsFromKode_matkul(kode_matkul string) (Dhs) {
+	dhs := MongoConnect("adorable").Collection("nilai")
 	filter := bson.M{"phone_number": phone_number}
-	err := karyawan.FindOne(context.TODO(), filter).Decode(&staf)
+	err := dhs.FindOne(context.TODO(), filter).Decode(&staf)
 	if err != nil {
-		fmt.Printf("getKaryawanFromPhoneNumber: %v\n", err)
+		fmt.Printf("getDhsFromKode_matkul: %v\n", err)
 	}
-	return staf
+	return dhs
 }

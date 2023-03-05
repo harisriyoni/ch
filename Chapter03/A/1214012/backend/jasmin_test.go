@@ -5,24 +5,24 @@ import (
 	"testing"
 )
 
-func TestInsertPresensi(t *testing.T) {
-	long := 98.345345
-	lat := 123.561651
-	lokasi := "rumah"
-	phonenumber := "6811110023231"
-	checkin := "masuk"
-	biodata := Karyawan{
-		Nama:         "ujang",
-		Phone_number: "6284564562",
-		Jabatan:      "tukang sapu",
+func TestInsertNilai(t *testing.T) {
+	ID := 1
+	nama_matkul := Network Programming
+	kode_matkul := "TI42253"
+	sks := "3"
+	grade := "A"
+	matakuliah := DHS{
+		Nama_matkul: "Network Programming",
+		Kode_matkul: "TI536678",
+		Nama_dosen:  "M. Yusril Helmi",
 	}
-	hasil := InsertPresensi(long, lat, lokasi, phonenumber, checkin, biodata)
+	hasil := InsertNilai(ID, nama_matkul, kode_matkul, sks, grade, matakuliah)
 	fmt.Println(hasil)
 
 }
 
-func TestGetKaryawanFromPhoneNumber(t *testing.T) {
-	phonenumber := "6811110023231"
-	biodata := GetKaryawanFromPhoneNumber(phonenumber)
-	fmt.Println(biodata)
+func TestGetdhsFromKode_matkul(t *testing.T) {
+	kode_matkul := "TI536678"
+	matakuliah := GetDhsFromKode_matkul(kode_matkul)
+	fmt.Println(matakuliah)
 }
