@@ -204,6 +204,11 @@ Pilih nama aplikasi kita di heroku dan klik Submit Order Form
 
 ![image](https://user-images.githubusercontent.com/11188109/223276527-235a3ead-76e8-499b-b0ec-ddeb4dd57423.png)
 
+JawsDB akan terinstall, untuk memakainya kita hanya butuh Connection String yang bisa di dapatkan dengan klik JawsDB Maria di bagian Add-ons
+
+![image](https://user-images.githubusercontent.com/11188109/223276910-83bf42d4-cfc7-4d82-9807-ebd18e0f0013.png)
+
+![image](https://user-images.githubusercontent.com/11188109/223277457-c8e6f6a5-09b6-4546-9376-030280a453ae.png)
 
 
 ### Edit Environtment Variabel
