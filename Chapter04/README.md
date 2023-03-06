@@ -156,8 +156,35 @@ Dan akhirnya web sudah bisa diakses.
 
 ![image](https://user-images.githubusercontent.com/11188109/223247620-782c1571-d0e8-4f2a-abd4-89a52f457d69.png)
 
-Sekarang aplikasi sudah berjalan dengan baik. Akan tetapi ada beberapa hal yang harus di konfigurasi kembali. Yang paling pertama untuk dilakukan konfigurasi dari boiler plate iteung adalah melakukan aktifasi Prefork. Kita bisa lihat di heroku logs, terlihat Prefork statusnya masih Disabled.
+Sekarang aplikasi sudah berjalan dengan baik. Akan tetapi ada beberapa hal yang harus di konfigurasi kembali. Yang paling pertama untuk dilakukan konfigurasi dari boiler plate iteung adalah melakukan aktifasi Prefork. Kita bisa lihat di heroku logs, terlihat Prefork statusnya masih Disabled. Kita buka file main.go tambahkan config.Iteung pada fungsi fiber.New()
 
+```go
+func main() {
+	go whatsauth.RunHub()
+	site := fiber.New(config.Iteung)
+	site.Use(cors.New(config.Cors))
+	url.Web(site)
+	log.Fatal(site.Listen(musik.Dangdut()))
+}
+```
+
+Kemudian kita buat file config.go di dalam folder config yang berisi :
+
+```go
+package config
+
+import "github.com/gofiber/fiber/v2"
+
+var Iteung = fiber.Config{
+	Prefork:       true,
+	CaseSensitive: true,
+	StrictRouting: true,
+	ServerHeader:  "Iteung",
+	AppName:       "Message Router",
+}
+```
+
+Simpan add, commit push kembali ke repo dan heroku.
 
 
 Pre requisite :
