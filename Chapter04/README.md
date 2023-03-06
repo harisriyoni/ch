@@ -245,7 +245,8 @@ Untuk saat ini kita tambahkan MARIASTRINGAKADEMIK dan MONGOSTRING terlebih dahul
 MARIASTRINGAKADEMIK=mysql://username:password@ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/
 MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
 ```
-![image](https://user-images.githubusercontent.com/11188109/223278947-67e6efea-71bb-4dae-aaa7-821e204279da.png)
+
+![image](https://user-images.githubusercontent.com/11188109/223279062-9a65fb96-50f4-4639-b1b9-b035823445cf.png)
 
 
 Pre requisite :
