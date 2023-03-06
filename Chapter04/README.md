@@ -112,6 +112,18 @@ Terlihat masih error, ternyata kita belum menentukan builpacks, kunjungi https:/
 
 ![image](https://user-images.githubusercontent.com/11188109/223236780-0a3079ca-0213-46a1-ab54-7b214cb8ac27.png)
 
+Muncul error berikutnya. Tenang saja jangan panik. Karena error kita jadi belajar. terlihat tiba tiba terdeteksi package iteung, ini berarti kode program di dalam file masih import nama package yang lama. Tinggal kita ganti semua importnya dengan nama package yang di deklarasikan pada saat kita go mod init tadi.
+
+![image](https://user-images.githubusercontent.com/11188109/223238838-2f2ace7f-dbda-4dfa-9cc7-0ce03b990d2a.png)
+
+Kita buka VS Code, kita buka terminal pada bagianPROBLEMS akan mengeluarkan error yang serupa. Selesaikan satu persatu di masing-masing file yang muncul problems.
+
+![image](https://user-images.githubusercontent.com/11188109/223239598-40e6ad6a-8fa4-4ac4-89e1-a149094ed25b.png)
+
+Masalah selesai dengan mengganti import di ketiga file yaitu main.go, controller.go dan url.go. Sekarang kita tinggal add commit dan push ke github dan heroku kembali.
+
+![image](https://user-images.githubusercontent.com/11188109/223240939-18fa83ac-006b-41e8-9477-7cc0692c8a98.png)
+
 
 
 
