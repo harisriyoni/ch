@@ -96,17 +96,21 @@ Tentunya disini kita akan menemui error pertama dari Heroku. Tenang saja, jangan
 Terlihat kita belum mendefinisikan bahasa yang digunakan untuk aplikasi ini, untuk itu kita akan membaca cara mendefinisikan bahasa bisa dilihat di menu [Heroku Dev Center](https://devcenter.heroku.com/articles/getting-started-with-go#define-a-procfile). Diharuskan membuat Procfile yang berisi
 
 ```sh
-web: bin/gocroot
+main: bin/gocroot
 ```
 
 dimana gocroot adalah nama repo kita.
 
 ![image](https://user-images.githubusercontent.com/11188109/223233562-f2328906-61a4-440f-aabb-3aa8519f0c81.png)
 
+Setelah kita buat procfile kita add commit dan push
+
+![image](https://user-images.githubusercontent.com/11188109/223234333-b4df95f1-2ec4-48d2-85c1-4204cd7ce3c1.png)
 
 
+Terlihat masih error, ternyata kita belum menentukan builpacks, kunjungi https://devcenter.heroku.com/articles/buildpacks untuk melakukan pemilihan buildpacks. Tampak dibagian web tidak membantu. Dan tersadar kita belum melakukan go mod init, karena terlihat belum ada file gomod dan go.sum di folder repo. Kita lakukan dulu init dan berhasil.
 
-
+![image](https://user-images.githubusercontent.com/11188109/223236780-0a3079ca-0213-46a1-ab54-7b214cb8ac27.png)
 
 
 
