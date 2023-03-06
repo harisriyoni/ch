@@ -124,6 +124,26 @@ Masalah selesai dengan mengganti import di ketiga file yaitu main.go, controller
 
 ![image](https://user-images.githubusercontent.com/11188109/223240939-18fa83ac-006b-41e8-9477-7cc0692c8a98.png)
 
+Terlihat damai dan tentram akhirnya kita berhasil melakukan deployment ke heroku
+
+![image](https://user-images.githubusercontent.com/11188109/223242344-7e10de9a-7a2e-4a8c-a470-70cb5d90d12d.png)
+
+Oke kita coba buka url aplikasi kita, dicontohkan di heroku CLI disini https://gocroot.herokuapp.com/ kita coba buka apakah sesuai dengan yang diharapkan.
+
+![image](https://user-images.githubusercontent.com/11188109/223242649-e632ffc6-ae38-4ace-960d-fb0e0a39f250.png)
+
+Dan kita menemukan error selanjutnya, alhamdulillah. kita coba jalankan heroku logs --tail pada git bash
+
+![image](https://user-images.githubusercontent.com/11188109/223242915-0a1de7d6-8626-41d9-9f7e-dff92197ec5a.png)
+
+Katanya Code H14 No Web processes running, berdasarkan hasil penelusuran https://stackoverflow.com/questions/41804507/h14-error-in-heroku-no-web-processes-running hal ini terjadi karena kita belum melakukan set web dynos di aplikasi kita pada dashboard heroku. Oleh karena itu kita kunjungi kembali dashboard heroku kita.
+
+![image](https://user-images.githubusercontent.com/11188109/223243600-1cec1175-5a39-43d0-be73-e9658876d133.png)
+
+Pada bagian Menu Resources, dan pada bagian main bin/gocroot kita klik tombol tanda pensil, kita geser tombol bulan dan klik tombol confirm
+
+![image](https://user-images.githubusercontent.com/11188109/223243865-ce1debee-020f-4cbf-af37-6fbcc75daaa3.png)
+
 
 
 
