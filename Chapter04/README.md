@@ -242,7 +242,7 @@ URLAPIWABUTTON
 
 Untuk saat ini kita tambahkan MARIASTRINGAKADEMIK dan MONGOSTRING terlebih dahulu contoh :
 ```env
-MARIASTRINGAKADEMIK=mysql://username:password@ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/
+MARIASTRINGAKADEMIK=username:password@tcp(ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)/
 MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
 ```
 
@@ -265,6 +265,12 @@ var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
 
 var Ulbimongoconn = atdb.MongoConnect(DBUlbimongoinfo)
 ```
+
+Jika terdapat error seperti ini maka modif Connection string seperti diatas
+
+![image](https://user-images.githubusercontent.com/11188109/223281074-53d90100-0c52-433c-a676-e443e8014e2d.png)
+
+
 
 Pre requisite :
 1. Akun heroku yang diaktifkan dengan github student pack
