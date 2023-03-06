@@ -152,6 +152,12 @@ Dan akhirnya web sudah bisa diakses.
 
 ![image](https://user-images.githubusercontent.com/11188109/223246386-1b9fb839-74c2-4826-88f5-12b5ae2ed379.png)
 
+## Iteung Boiler Plate
+
+![image](https://user-images.githubusercontent.com/11188109/223247620-782c1571-d0e8-4f2a-abd4-89a52f457d69.png)
+
+Sekarang aplikasi sudah berjalan dengan baik. Akan tetapi ada beberapa hal yang harus di konfigurasi kembali. Yang paling pertama untuk dilakukan konfigurasi dari boiler plate iteung adalah melakukan aktifasi Prefork. Kita bisa lihat di heroku logs, terlihat Prefork statusnya masih Disabled.
+
 
 
 Pre requisite :
