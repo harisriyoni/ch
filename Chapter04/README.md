@@ -184,7 +184,10 @@ var Iteung = fiber.Config{
 }
 ```
 
-Simpan add, commit push kembali ke repo dan heroku.
+Simpan add, commit push kembali ke repo dan heroku. Terlihat di heroku logs, prefork sudah aktif
+
+![image](https://user-images.githubusercontent.com/11188109/223252919-aacc55b5-897d-4b38-a55c-3a54827b6dff.png)
+
 
 
 Pre requisite :
