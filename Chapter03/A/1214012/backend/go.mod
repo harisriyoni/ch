@@ -1,7 +1,6 @@
 module github.com/jasminemutiara03/ws/Chapter03/A/1214012/backend
 
 go 1.19
-
 require go.mongodb.org/mongo-driver v1.11.2
 
 require (

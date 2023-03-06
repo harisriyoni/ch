@@ -11,9 +11,9 @@ func TestInsertNilai(t *testing.T) {
 	kode_matkul := "TI42253"
 	sks := "3"
 	grade := "A"
-	matakuliah := DHS{
+	matakuliah := dhs{
 		Nama_matkul: "Network Programming",
-		Kode_matkul: "TI536678",
+		Kode_matkul: "TI42253",
 		Nama_dosen:  "M. Yusril Helmi",
 	}
 	hasil := InsertNilai(ID, nama_matkul, kode_matkul, sks, grade, matakuliah)
@@ -22,7 +22,7 @@ func TestInsertNilai(t *testing.T) {
 }
 
 func TestGetdhsFromKode_matkul(t *testing.T) {
-	kode_matkul := "TI536678"
+	kode_matkul := "TI42253"
 	matakuliah := GetDhsFromKode_matkul(kode_matkul)
-	fmt.Println(matakuliah)
+	fmt.Println(nilai)
 }

@@ -1,47 +1,49 @@
-package jasmin
+package type
 
 import (
-	"go.mongodb.org/mongo-driver/bson/primitive"
+	"context"
+	"fmt"
+	"os"
+
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-type Nilai struct {
-	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
-	Kode_matkul string             `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
-	Sks         string             `bson:"sks,omitempty" json:"sks,omitempty"`
-	Grade       string             `bson:"grade,omitempty" json:"grade,omitempty"`
+var MongoString string = os.Getenv("MONGOSTRING")
+
+func MongoConnect(dbname string) (db *mongo.Database) {
+	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(MongoString))
+	if err != nil {
+		fmt.Printf("MongoConnect: %v\n", err)
+	}
+	return client.Database(dhs)
 }
 
-type Matakuliah struct {
-	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
-	Kode_matkul string             `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
-	Nama_dosen  string             `bson:"nama_dosen,omitempty" json:"nama_dosen,omitempty"`
-	Sks         int                `bson:"sks,omitempty" json:"sks,omitempty"`
-	Gambar      string             `bson:"gambar,omitempty" json:"gambar,omitempty"`
+func InsertOneDoc(db string, collection string, doc interface{}) (insertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection(collection).InsertOne(context.TODO(), doc)
+	if err != nil {
+		fmt.Printf("InsertOneDoc: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-type Users struct {
-	ID             primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	Nama           float64            `bson:"nama,omitempty" json:"nama,omitempty"`
-	Npm            float64            `bson:"npm,omitempty" json:"npm,omitempty"`
-	Program        string             `bson:"program,omitempty" json:"program,omitempty"`
-	Program_studi  string             `bson:"program_studi,omitempty" json:"program_studi,omitempty"`
-	Tahun_akademik primitive.DateTime `bson:"tahun_akademik,omitempty" json:"tahun_akademik,omitempty"`
-	Kelas          string             `bson:"kelas,omitempty" json:"kelas,omitempty"`
-	Dosen_wali     string             `bson:"dosen_wali,omitempty" json:"dosen_wali,omitempty"`
+func InsertNilai(nama_matkul string, kode_matkul int, nama_dosen string, sks dhs) (InsertedID interface{}) {
+	var Nilai Nilai
+	nilai.ID = ID
+	nilai.Nama_matkul = nama_matkul
+	nilai.Kode_matkul = kode_matkul
+	nilai.Sks = sks
+	nilai.Grade = grade
+	return InsertOneDoc("adorable", "nilai", nilai)
 }
 
-type Krs struct {
-	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	Kode_matkul string             `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
-	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
-	Status      string             `bson:"status,omitempty" json:"status,omitempty"`
-	Sks         float64            `bson:"sks,omitempty" json:"sks,omitempty"`
-	Kelas       float64            `bson:"kelas,omitempty" json:"kelas,omitempty"`
-}
-
-type Geometry struct {
-	Type        string      `json:"type" bson:"type"`
-	Coordinates interface{} `json:"coordinates" bson:"coordinates"`
+func GetDhsFromKode_matkul(kode_matkul string) dhs {
+	dhs := MongoConnect("adorable").Collection("nilai")
+	filter := bson.M{"kode_matkul": kode_matkul}
+	err := dhs.FindOne(context.TODO(), filter).Decode(&staf)
+	if err != nil {
+		fmt.Printf("getdhsFromKode_matkul: %v\n", err)
+	}
+	return dhs
 }

@@ -1,49 +1,49 @@
 package type
 
 import (
-	"context"
-	"fmt"
-	"os"
-
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-var MongoString string = os.Getenv("MONGOSTRING")
-
-func MongoConnect(dbname string) (db *mongo.Database) {
-	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(MongoString))
-	if err != nil {
-		fmt.Printf("MongoConnect: %v\n", err)
-	}
-	return client.Database(Dhs)
+type Nilai struct {
+	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
+	Kode_matkul int                `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
+	Sks         int                `bson:"sks,omitempty" json:"sks,omitempty"`
+	Grade       string             `bson:"grade,omitempty" json:"grade,omitempty"`
 }
 
-func InsertOneDoc(db string, collection string, doc interface{}) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection(collection).InsertOne(context.TODO(), doc)
-	if err != nil {
-		fmt.Printf("InsertOneDoc: %v\n", err)
-	}
-	return insertResult.InsertedID
+type Matakuliah struct {
+	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
+	Kode_matkul int                `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
+	Nama_dosen  string             `bson:"nama_dosen,omitempty" json:"nama_dosen,omitempty"`
+	Sks         int                `bson:"sks,omitempty" json:"sks,omitempty"`
+	Gambar      string             `bson:"gambar,omitempty" json:"gambar,omitempty"`
 }
 
-func InsertNilai(nama_matkul string, kode_matkul float64, nama_dosen string, sks Dhs) (InsertedID interface{}) {
-	var Nilai Nilai
-	nilai.ID = ID
-	nilai.Nama_matkul = nama_matkul
-	nilai.Kode_matkul = kode_matkul
-	nilai.Sks = sks
-	nilai.Grade = grade
-	return InsertOneDoc("adorable", "nilai", nilai)
+type Users struct {
+	ID             primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama           string             `bson:"nama,omitempty" json:"nama,omitempty"`
+	Npm            float64            `bson:"npm,omitempty" json:"npm,omitempty"`
+	Program        string             `bson:"program,omitempty" json:"program,omitempty"`
+	Program_studi  string             `bson:"program_studi,omitempty" json:"program_studi,omitempty"`
+	Tahun_akademik primitive.DateTime `bson:"tahun_akademik,omitempty" json:"tahun_akademik,omitempty"`
+	Kelas          string             `bson:"kelas,omitempty" json:"kelas,omitempty"`
+	Dosen_wali     string             `bson:"dosen_wali,omitempty" json:"dosen_wali,omitempty"`
 }
 
-func GetDhsFromKode_matkul(kode_matkul string) Dhs {
-	dhs := MongoConnect("adorable").Collection("nilai")
-	filter := bson.M{"phone_number": phone_number}
-	err := dhs.FindOne(context.TODO(), filter).Decode(&staf)
-	if err != nil {
-		fmt.Printf("getDhsFromKode_matkul: %v\n", err)
-	}
-	return dhs
+type Rencanastudi struct {
+	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
+	Kode_matkul int                `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
+	Status      string             `bson:"status,omitempty" json:"status,omitempty"`
+	Sks         int                `bson:"sks,omitempty" json:"sks,omitempty"`
+	Kelas       string             `bson:"kelas,omitempty" json:"kelas,omitempty"`
+}
+type Transkrip {
+	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama_matkul string             `bson:"nama_matkul,omitempty" json:"nama_matkul,omitempty"`
+	Kode_matkul int                `bson:"kode_matkul,omitempty" json:"kode_matkul,omitempty"`
+	Sks         int                `bson:"sks,omitempty" json:"sks,omitempty"`
+	Grade       string             `bson:"kelas,omitempty" json:"kelas,omitempty"`
 }
