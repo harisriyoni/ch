@@ -199,24 +199,25 @@ Jika pada windows kita melakukan edit di environtment variabel. Begitu juga hero
 Kita masukkan beberapa environment yang didapat pada folder config dari boiler plate iteung seperti :
 
 file db.go
-
+```env
 ITEUNGBEV1
 MONGOSTRING
 MARIASTRINGAKADEMIK
-
+```
 file token.go
-
+```env
 PUBLICKEY
 PRIVATEKEY
-
+```
 file cors.go
+```env
 INTERNALHOST
 PORT
-
+```
 file api.go
-
+```env
 URLAPIWABUTTON
-
+```
 
 
 Pre requisite :
