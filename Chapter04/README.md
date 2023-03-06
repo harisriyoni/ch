@@ -144,7 +144,13 @@ Pada bagian Menu Resources, dan pada bagian main bin/gocroot kita klik tombol ta
 
 ![image](https://user-images.githubusercontent.com/11188109/223243865-ce1debee-020f-4cbf-af37-6fbcc75daaa3.png)
 
+Kita cek web ternyata masih error, kita cek heroku logs ternyata masih error juga. Coba iseng kita hapus Procfile, kemudian kita push kembali. Dan di bagian dashboard, aktifkan kembali Reourcesnya. 
 
+![image](https://user-images.githubusercontent.com/11188109/223246111-4ef01e7c-ce34-4075-8ddd-4017d65c9a57.png)
+
+Dan akhirnya web sudah bisa diakses.
+
+![image](https://user-images.githubusercontent.com/11188109/223246386-1b9fb839-74c2-4826-88f5-12b5ae2ed379.png)
 
 
 
