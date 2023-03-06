@@ -240,6 +240,13 @@ file api.go
 URLAPIWABUTTON
 ```
 
+Untuk saat ini kita tambahkan MARIASTRINGAKADEMIK dan MONGOSTRING terlebih dahulu contoh :
+```env
+MARIASTRINGAKADEMIK=mysql://username:password@ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/
+MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
+```
+![image](https://user-images.githubusercontent.com/11188109/223278947-67e6efea-71bb-4dae-aaa7-821e204279da.png)
+
 
 Pre requisite :
 1. Akun heroku yang diaktifkan dengan github student pack
