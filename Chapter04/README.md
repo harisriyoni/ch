@@ -154,6 +154,8 @@ Dan akhirnya web sudah bisa diakses.
 
 ## Iteung Boiler Plate
 
+### Aktifasi Prefork
+
 ![image](https://user-images.githubusercontent.com/11188109/223247620-782c1571-d0e8-4f2a-abd4-89a52f457d69.png)
 
 Sekarang aplikasi sudah berjalan dengan baik. Akan tetapi ada beberapa hal yang harus di konfigurasi kembali. Yang paling pertama untuk dilakukan konfigurasi dari boiler plate iteung adalah melakukan aktifasi Prefork. Kita bisa lihat di heroku logs, terlihat Prefork statusnya masih Disabled. Kita buka file main.go tambahkan config.Iteung pada fungsi fiber.New()
@@ -187,6 +189,33 @@ var Iteung = fiber.Config{
 Simpan add, commit push kembali ke repo dan heroku. Terlihat di heroku logs, prefork sudah aktif
 
 ![image](https://user-images.githubusercontent.com/11188109/223252919-aacc55b5-897d-4b38-a55c-3a54827b6dff.png)
+
+### Edit Environtment Variabel
+
+Jika pada windows kita melakukan edit di environtment variabel. Begitu juga heroku memiliki fitur tersebut yang bernama config vars. Tinggal kita masuk ke Dashboard bagian Settings > Config Vars > Reveal Config Vars.
+
+![image](https://user-images.githubusercontent.com/11188109/223269495-94f73eb1-7c3b-44bc-b2e4-380e0847ae1b.png)
+
+Kita masukkan beberapa environment yang didapat pada folder config dari boiler plate iteung seperti :
+
+file db.go
+
+ITEUNGBEV1
+MONGOSTRING
+MARIASTRINGAKADEMIK
+
+file token.go
+
+PUBLICKEY
+PRIVATEKEY
+
+file cors.go
+INTERNALHOST
+PORT
+
+file api.go
+
+URLAPIWABUTTON
 
 
 
