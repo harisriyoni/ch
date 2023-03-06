@@ -248,6 +248,23 @@ MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
 
 ![image](https://user-images.githubusercontent.com/11188109/223279062-9a65fb96-50f4-4639-b1b9-b035823445cf.png)
 
+Edit dan tambahkan konfigurasi nama database yang dipakai pada file db.go folder config
+
+```go
+var DBUlbimariainfo = atdb.DBInfo{
+	DBString: MariaStringAkademik,
+	DBName:   "xia3fhuwzm5wo0zo",
+}
+
+var DBUlbimongoinfo = atdb.DBInfo{
+	DBString: MongoString,
+	DBName:   "iteung",
+}
+
+var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
+
+var Ulbimongoconn = atdb.MongoConnect(DBUlbimongoinfo)
+```
 
 Pre requisite :
 1. Akun heroku yang diaktifkan dengan github student pack
