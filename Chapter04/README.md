@@ -190,6 +190,22 @@ Simpan add, commit push kembali ke repo dan heroku. Terlihat di heroku logs, pre
 
 ![image](https://user-images.githubusercontent.com/11188109/223252919-aacc55b5-897d-4b38-a55c-3a54827b6dff.png)
 
+### Free MariaDB JawsDB
+
+Kita akan menambahkan add on MariaDB dari heroku. Pertama dari dashboard kita klik Find more add-ons dan pilih JawsDB Maria https://elements.heroku.com/addons/jawsdb-maria
+
+![image](https://user-images.githubusercontent.com/11188109/223276199-009e12ae-1a53-43ce-b78f-d4fd706182ff.png)
+
+Klik Install JawsDB Maria
+
+![image](https://user-images.githubusercontent.com/11188109/223276346-7549ae48-4b9b-41a0-bbaf-c8a4e59ac092.png)
+
+Pilih nama aplikasi kita di heroku dan klik Submit Order Form
+
+![image](https://user-images.githubusercontent.com/11188109/223276527-235a3ead-76e8-499b-b0ec-ddeb4dd57423.png)
+
+
+
 ### Edit Environtment Variabel
 
 Jika pada windows kita melakukan edit di environtment variabel. Begitu juga heroku memiliki fitur tersebut yang bernama config vars. Tinggal kita masuk ke Dashboard bagian Settings > Config Vars > Reveal Config Vars.
