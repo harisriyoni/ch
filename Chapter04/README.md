@@ -349,7 +349,7 @@ Berhasil, sampai sini kita sudah melakukan deployment backend. Jika terjadi erro
 * Mencoba deploy boiler plate https://github.com/aiteung/iteung ke heroku, sudah diisi dengan pemanggilan package dari repo https://github.com/gocroot/kampus
 * Github Pages Sudah UP untuk frontend, contoh : https://gocroot.github.io/app/bimbingan/menusaya
 * Pull Request dengan Judul 4-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter04/KELAS/NPM/ yang berisi :
-  * Daftar URL Heroku app yang sudah memanggil function di package [contoh](https://gocroot.herokuapp.com/presensi) (nilai 10/URL)
+  * Daftar URL Heroku app yang sudah memanggil function di package [contoh](https://gocroot.herokuapp.com/presensi) beserta skinsutannya (nilai 10/URL)
   * Skrinsutan isi mongodb dari mongocompass yang sudah berisi data dummy kasus (nilai 10)
   * URL Package yang sudah publish di pkg.go.dev dari https://github.com/gocroot/kampus (nilai 10)
-  * Daftar URL github pages dari setiap studi kasus pada repo https://github.com/gocroot/app contoh. gocroot.github.io/app/bimbingan/menusaya (nilai 10/URL)
+  * Daftar URL github pages dari setiap studi kasus pada repo https://github.com/gocroot/app beserta skinsutannya contoh. gocroot.github.io/app/bimbingan/menusaya (nilai 10/URL)
