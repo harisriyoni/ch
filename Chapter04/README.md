@@ -313,7 +313,7 @@ Setelah itu, silahkan masukkan data dummy pada collection dengan mongo compass y
 Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controller. Cukup dengan 3 tahap, yaitu :
 1. Definisikan alamat URL untuk akses package beserta nama fungsi di controller yang akan kita buat pada file url.go
    ```go
-   page.Get("/presensi", controller.Presensi)
+   page.Get("/presensi", controller.GetPresensiBulanIni)
    ```
 2. Go get package yang akan digunakan melalui terminal di vscode
    ```sh
@@ -321,7 +321,7 @@ Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controll
    ```
 3. Buat fungsi di file controller.go
    ```go
-   func Presensi(c *fiber.Ctx) error {
+   func GetPresensiBulanIni(c *fiber.Ctx) error {
         var ps []presensi.Presensi
         ps := presensi.GetPresensiCurrentMonth()
 	return c.JSON(ps)
