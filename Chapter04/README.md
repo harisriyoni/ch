@@ -270,7 +270,25 @@ Jika terdapat error seperti ini maka modif Connection string seperti diatas
 
 ![image](https://user-images.githubusercontent.com/11188109/223281074-53d90100-0c52-433c-a676-e443e8014e2d.png)
 
+### Memanggil package golang
 
+Dari package yang sudah dibuat pada chapter sebelumnya kita akan coba panggil dari aplikasi boiler plate iteung yang sudah di deploy di heroku. Sebagai contoh kita akan mencoba memanggil package musik di https://github.com/aiteung/musik hal yang pertama kali adalah kita membuka file url.go di folder url kita tambahkan baris di dalam func Web sebuah baris kode yang memanggil controller.Homepage yaitu fungsi yang akan kita buat :
+
+```go
+page.Get("/", controller.Homepage) //ujicoba panggil package musik
+```
+pada terminal ketikkan perintah go get package yang akan digunakan
+```sh
+go get github.com/aiteung/musik
+```
+
+kemudian kita buka file controller.go di folder controller kita tambahkan fungsi Homepage
+```go
+func Homepage(c *fiber.Ctx) error {
+	ipaddr := musik.GetIPaddress()
+	return c.JSON(ipaddr)
+}
+```
 
 Pre requisite :
 1. Akun heroku yang diaktifkan dengan github student pack
