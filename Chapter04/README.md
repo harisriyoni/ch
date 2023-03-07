@@ -326,6 +326,11 @@ Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controll
         return c.JSON(ps)
    }
    ```
+Jangan lupa selalu menjalankan perintah 
+```sh
+go mod tidy
+```
+Kemudian add, commit push ke repo dan heroku.
 
 
 ## Kerjakan
