@@ -308,6 +308,26 @@ Agar aplikasi di heroku bisa mengakses mongodb yang sudah dibuat di mongodb.com 
 
 Setelah itu, silahkan masukkan data dummy pada collection dengan mongo compass yang diakses oleh package yang dikembangkan sebanyak-banyaknya
 
+### Deployment Package
+
+Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controller. Cukup dengan 3 tahap, yaitu :
+1. Definisikan alamat URL untuk akses package beserta nama fungsi di controller yang akan kita buat pada file url.go
+   ```go
+   page.Get("/presensi", controller.Presensi)
+   ```
+2. Go get package yang akan digunakan melalui terminal di vscode
+   ```sh
+   go get github.com/aiteung/musik
+   ```
+3. Buat fungsi di file controller.go
+   ```go
+   func Homepage(c *fiber.Ctx) error {
+	ipaddr := musik.GetIPaddress()
+	return c.JSON(ipaddr)
+   }
+   ```
+
+
 ## Kerjakan
 1. Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus 
 2. Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan
