@@ -63,6 +63,11 @@ Login sudah berhasil kita bisa close git bash
 
 ![image](https://user-images.githubusercontent.com/11188109/223228974-93862ebe-af41-4612-81ff-3f71b5cf0a79.png)
 
+Kita bisa juga melakukan add SSH key ke heroku kita dengan klik gambar profile di pojok kanan atas > Account Settings > SSH Keys
+
+![image](https://user-images.githubusercontent.com/11188109/223316679-790d7423-0dc1-4e5c-bdae-1a2afb668228.png)
+
+
 ## Deployment Boiler Plate
 
 Disini kita akan mencoba testing deployment ke Heroku. Aplikasi web yang akan dilakukan deploymeny adalah Boiler Plate iTeung yang berada di repo https://github.com/aiteung/iteung
