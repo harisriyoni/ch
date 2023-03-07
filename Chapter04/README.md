@@ -334,7 +334,13 @@ Kemudian add, commit push ke repo dan heroku. Kemudian kita akses melaui url yan
 
 ![image](https://user-images.githubusercontent.com/11188109/223319800-d4743c4d-27af-4636-9d07-7800555e4007.png)
 
-Berhasil, sampai sini kita sudah melakukan deployment backend
+Berhasil, sampai sini kita sudah melakukan deployment backend. Jika terjadi error maka klik ALLOW ACCESS FROM ANYWHERE > Confirm pada menu Network Access > ADD IP ADDRESS mongodb.com
+
+![image](https://user-images.githubusercontent.com/11188109/223330625-28afbfc3-af79-46dc-a1b1-a502181b79eb.png)
+
+![image](https://user-images.githubusercontent.com/11188109/223330948-06b8493d-a9b7-4f19-86ba-06c35d6aaa96.png)
+
+
 
 ## Kerjakan
 1. Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus 
