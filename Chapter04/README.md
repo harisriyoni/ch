@@ -351,5 +351,5 @@ Berhasil, sampai sini kita sudah melakukan deployment backend. Jika terjadi erro
 * Pull Request dengan Judul 4-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter04/KELAS/NPM/ yang berisi :
   * Daftar URL Heroku app yang sudah memanggil function di package [contoh](https://gocroot.herokuapp.com/presensi) beserta skinsutannya (nilai 10/URL)
   * Skrinsutan isi mongodb dari mongocompass yang sudah berisi data dummy kasus (nilai 10)
-  * URL Package yang sudah publish di pkg.go.dev dari https://github.com/gocroot/kampus (nilai 10)
+  * URL Package yang sudah publish di pkg.go.dev dari https://github.com/gocroot/kampus beserta skinsutannya (nilai 10)
   * Daftar URL github pages dari setiap studi kasus pada repo https://github.com/gocroot/app beserta skinsutannya contoh. gocroot.github.io/app/bimbingan/menusaya (nilai 10/URL)
