@@ -289,6 +289,17 @@ func Homepage(c *fiber.Ctx) error {
 	return c.JSON(ipaddr)
 }
 ```
+Kita buka alamat aplikasi dan terlihat ip address dari host heroku
+
+![image](https://user-images.githubusercontent.com/11188109/223288688-d046ad76-d7fd-4f1e-95d5-c0b559d51335.png)
+
+
+### Mongodb.com Network Access
+
+Agar aplikasi di heroku bisa mengakses mongodb yang sudah dibuat di mongodb.com maka kita harus memasukkan IP adress host heroku yang didapat pada langkah membuat controller homepage ke mongodb.com
+
+![image](https://user-images.githubusercontent.com/11188109/223288962-3917c06a-8332-41cd-b8ce-634180cee9b3.png)
+
 
 Pre requisite :
 1. Akun heroku yang diaktifkan dengan github student pack
