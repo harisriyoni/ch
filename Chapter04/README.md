@@ -330,8 +330,11 @@ Jangan lupa selalu menjalankan perintah
 ```sh
 go mod tidy
 ```
-Kemudian add, commit push ke repo dan heroku.
+Kemudian add, commit push ke repo dan heroku. Kemudian kita akses melaui url yang kita deklarasikan di file url.go
 
+![image](https://user-images.githubusercontent.com/11188109/223319800-d4743c4d-27af-4636-9d07-7800555e4007.png)
+
+Berhasil, sampai sini kita sudah melakukan deployment backend
 
 ## Kerjakan
 1. Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus 
