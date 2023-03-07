@@ -346,8 +346,8 @@ Berhasil, sampai sini kita sudah melakukan deployment backend. Jika terjadi erro
 
 * Pull Request Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus . Perwakilan kelas melakukan tagging dan publish package bersama
 * Pull REquest Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan
-* Mencoba deploy boiler plate https://github.com/aiteung/iteung ke heroku, sudah diisi dengan pemanggilan package yang dibuat sebelumnya.
-* Github Pages Sudah UP untuk frontend, contoh : https://universitas.bukupedia.co.id/ws/Chapter03/A/NPM/frontend/#
+* Mencoba deploy boiler plate https://github.com/aiteung/iteung ke heroku, sudah diisi dengan pemanggilan package dari repo https://github.com/gocroot/kampus
+* Github Pages Sudah UP untuk frontend, contoh : https://gocroot.github.io/app/bimbingan/menusaya
 * Pull Request dengan Judul 4-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter04/KELAS/NPM/ yang berisi :
   * Daftar URL Heroku app yang sudah memanggil function di package [contoh](https://gocroot.herokuapp.com/presensi)
   * URL [pkg.go.dev](https://pkg.go.dev/), beserta skrinsutan
