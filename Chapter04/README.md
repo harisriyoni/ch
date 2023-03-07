@@ -301,6 +301,8 @@ Agar aplikasi di heroku bisa mengakses mongodb yang sudah dibuat di mongodb.com 
 
 ![image](https://user-images.githubusercontent.com/11188109/223288962-3917c06a-8332-41cd-b8ce-634180cee9b3.png)
 
+Setelah itu, silahkan masukkan data dummy pada collection yang diakses oleh package yang dikembangkan sebanyak-banyaknya
+
 ## Kerjakan
 1. Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus 
 2. Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan
