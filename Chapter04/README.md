@@ -1,4 +1,4 @@
-# Deployment Aplikasi
+# Deployment Aplikasi Backend
 
 Disini kita akan melakukan :
 1. Mendaftarkan diri ke github student pack
