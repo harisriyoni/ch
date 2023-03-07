@@ -330,7 +330,7 @@ Jangan lupa selalu menjalankan perintah
 ```sh
 go mod tidy
 ```
-Kemudian add, commit push ke repo dan heroku. Kemudian kita akses melaui url yang kita deklarasikan di file url.go
+Kemudian add, commit push ke repo dan heroku. Kemudian kita akses melaui url yang kita deklarasikan di file url.go. Untuk method GET bisa menggunakan browser saja, untuk POST menggunakan POSTMAN
 
 ![image](https://user-images.githubusercontent.com/11188109/223319800-d4743c4d-27af-4636-9d07-7800555e4007.png)
 
