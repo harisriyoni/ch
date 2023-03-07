@@ -322,8 +322,7 @@ Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controll
 3. Buat fungsi di file controller.go
    ```go
    func GetPresensiBulanIni(c *fiber.Ctx) error {
-        var ps []presensi.Presensi
-        ps := presensi.GetPresensiCurrentMonth()
+        ps := presensi.GetPresensiCurrentMonth(config.Ulbimongoconn)
 	return c.JSON(ps)
    }
    ```
