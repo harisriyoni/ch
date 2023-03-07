@@ -317,13 +317,14 @@ Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controll
    ```
 2. Go get package yang akan digunakan melalui terminal di vscode
    ```sh
-   go get github.com/aiteung/musik
+   go get github.com/aiteung/presensi
    ```
 3. Buat fungsi di file controller.go
    ```go
-   func Homepage(c *fiber.Ctx) error {
-	ipaddr := musik.GetIPaddress()
-	return c.JSON(ipaddr)
+   func Presensi(c *fiber.Ctx) error {
+        var ps []presensi.Presensi
+        ps := presensi.GetPresensiCurrentMonth()
+	return c.JSON(ps)
    }
    ```
 
