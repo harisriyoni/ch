@@ -323,7 +323,7 @@ Pada chapter sebelumnya. Package yang sudah dibuat bisa kita panggil di controll
    ```go
    func GetPresensiBulanIni(c *fiber.Ctx) error {
         ps := presensi.GetPresensiCurrentMonth(config.Ulbimongoconn)
-	return c.JSON(ps)
+        return c.JSON(ps)
    }
    ```
 
