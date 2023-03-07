@@ -265,10 +265,12 @@ var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
 
 var Ulbimongoconn = atdb.MongoConnect(DBUlbimongoinfo)
 ```
-
-Jika terdapat error seperti ini maka modif Connection string seperti diatas
-
 ![image](https://user-images.githubusercontent.com/11188109/223281074-53d90100-0c52-433c-a676-e443e8014e2d.png)
+
+Jika terdapat error seperti diatas maka modif Connection string menjadi seperti berikut :
+```env
+MARIASTRINGAKADEMIK=username:password@tcp(ao9moanwus0rjiex.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306)/
+```
 
 ### Memanggil package golang
 
@@ -292,7 +294,6 @@ func Homepage(c *fiber.Ctx) error {
 Kita buka alamat aplikasi dan terlihat ip address dari host heroku
 
 ![image](https://user-images.githubusercontent.com/11188109/223288688-d046ad76-d7fd-4f1e-95d5-c0b559d51335.png)
-
 
 ### Mongodb.com Network Access
 
