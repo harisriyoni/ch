@@ -344,7 +344,7 @@ Berhasil, sampai sini kita sudah melakukan deployment backend. Jika terjadi erro
 
 ## Kerjakan
 
-* Pull Request Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus . Perwakilan kelas melakukan tagging dan publish package bersama
+* Pull Request Semua fungsi(di folder module) dan type(di folder model) di pull request ke repo https://github.com/gocroot/kampus . Perwakilan kelas melakukan tagging dan publish package kampus
 * Pull REquest Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan
 * Mencoba deploy boiler plate https://github.com/aiteung/iteung ke heroku, sudah diisi dengan pemanggilan package dari repo https://github.com/gocroot/kampus
 * Github Pages Sudah UP untuk frontend, contoh : https://gocroot.github.io/app/bimbingan/menusaya
