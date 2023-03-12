@@ -1,30 +1,25 @@
-package main
+package nizar
 
 import (
-	"time"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-type Tagihan struct {
-	ID           int
-	TotalHarga   float64
-	TanggalBeli  time.Time
-	Barang       []Barang
-	Pembeli      Pembeli
-	StatusBayar  bool
-	TanggalBayar time.Time
+type DataTagihan struct {
+	ID       primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
+	Nama_Mahasiswa string             `bson:"nama_mahasiswa" json:"nama_mahasiswa"`
+	Program_studi  string             `bson:"program_studi" json:"program_studi"`
+	Jumlah  string             `bson:"jumlah" json:"jumlah"`
+	Status  string             `bson:"status" json:"status"`
+}
+type DataSudah struct {
+	ID           primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
+	Nama_Mahasiswa string             `bson:"nama_mahasiswa" json:"nama_mahasiswa"`
+	Status   string          `bson:"status" json:"status"`
 }
 
-type Barang struct {
-	NamaBarang string
-	Harga      float64
-}
+type DataBelum struct {
+	ID           primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
+	Nama_Mahasiswa string             `bson:"nama_mahasiswa" json:"nama_mahasiswa"`
+	Status   string          `bson:"status" json:"status"`
 
-type Pembeli struct {
-	Nama     string
-	Email    string
-	NoTelp   string
-	Alamat   string
-	KodePos  string
-	Kota     string
-	Provinsi string
 }
