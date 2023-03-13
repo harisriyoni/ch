@@ -113,5 +113,29 @@ Hasilnya kita dapatkan object yang keluar dari consol.log fungsi isiRow
 
 ![image](https://user-images.githubusercontent.com/11188109/224831618-a416f2cf-7902-429d-8c76-651d1f1edca4.png)
 
-Sekarang kita masukkan ke dalam tabel. kita ubah croot.js lagi menjadi
+Sekarang kita masukkan ke dalam tabel. Sebelumnya edit index.html tambahkan id pada tabelnya
+```html
+<table class="w-full" id="karyawan">
+```
+kita ubah croot.js lagi menjadi
+```js
+import { get } from "https://jscroot.github.io/api/croot.js";
+import { setInner, addInner } from "https://jscroot.github.io/element/croot.js";
+import {tr} from "./template/table.js"
 
+let URLPresensi = "https://gocroot.herokuapp.com/presensi";
+
+get(URLPresensi,isiTablePresensi);
+
+function isiTablePresensi(results){
+    results.forEach(isiRow);
+}
+
+function isiRow(value){
+    let row=tr.replace("#NAMA#",value.Biodata.Nama).replace("#PHONENUMBER#",value.Phone_number).replace("#LOKASI#",value.Location).replace("#KET#",value.Checkin).replace("#MASUK#",value.Datetime).replace("#PULANG#",value.Datetime).replace("#DURASI#",value.Datetime);
+    addInner("karyawan",row)
+}
+
+
+setInner("namadivisi","Dari croot.js");
+```
