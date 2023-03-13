@@ -52,6 +52,17 @@ Dimana #NAMA#, #PHONENUMBER#, #LOKASI#,#KET# dst adalah variabel yang akan kita 
 
 Kita buat file croot.js di dalam folder js yang berisi.
 ```js
+import { get } from "https://jscroot.github.io/api/croot.js";
+import { setInner } from "https://jscroot.github.io/element/croot.js";
+
+URLPresensi = "https://gocroot.herokuapp.com/presensi";
+
+get(URLPresensi,isiTablePresensi);
+
+function isiTablePresensi(results){
+    console.log(results);
+}
+setInner("namadivisi","Dari croot.js");
 ```
 
 
