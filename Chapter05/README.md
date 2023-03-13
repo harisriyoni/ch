@@ -55,18 +55,26 @@ Kita buat file croot.js di dalam folder js yang berisi.
 import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner } from "https://jscroot.github.io/element/croot.js";
 
-URLPresensi = "https://gocroot.herokuapp.com/presensi";
+let URLPresensi = "https://gocroot.herokuapp.com/presensi";
+const hasil={};
 
 get(URLPresensi,isiTablePresensi);
 
 function isiTablePresensi(results){
     console.log(results);
+    hasil=results;
 }
 setInner("namadivisi","Dari croot.js");
 ```
 Kita commit dan push, kemudian tunggu hingga centang hijau pertanda github pages sudah terdeploy dengan baik
 
 ![image](https://user-images.githubusercontent.com/11188109/224800920-4d2e520a-e74a-4e2e-b305-3b599a356470.png)
+
+kemudian kita akses url github pages nya. Kita lakukan inspect dan masuk ke tab console terdapat error CORS tampak sebagai berikut.
+
+![image](https://user-images.githubusercontent.com/11188109/224802984-7d9bad9e-1390-4e63-a317-6becf62a670d.png)
+
+Artinya kita perlu mendaftarkan url 'https://adorableproject.github.io' ke dalam config cors.go di backend 'https://gocroot.herokuapp.com/presensi'.
 
 
 
