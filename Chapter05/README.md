@@ -64,6 +64,9 @@ function isiTablePresensi(results){
 }
 setInner("namadivisi","Dari croot.js");
 ```
+Kita commit dan push, kemudian tunggu hingga centang hijau pertanda github pages sudah terdeploy dengan baik
+
+![image](https://user-images.githubusercontent.com/11188109/224800920-4d2e520a-e74a-4e2e-b305-3b599a356470.png)
 
 
 
