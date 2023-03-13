@@ -10,7 +10,14 @@ Adapun langkah yang akan kita lakukan :
 # Kontainer dan Row Tabel
 
 Pertama pakai frontend yang sudah kemaren kita buat, deploy di github pages. Kita buat di dalam kontainer sebuah tabel untuk mengkonsumsi API.
-Contoh frontend : https://github.com/adorableproject/presensi dengan alamat github pages : https://adorableproject.github.io/presensi/ . Kita ambil script TR Tabel HTML yang kemudian kita taruh di file table.js yang di deklarasikan ke dalam variabel tr.
+Contoh frontend : https://github.com/adorableproject/presensi dengan alamat github pages : https://adorableproject.github.io/presensi/ . Hal yang pertama kali kita lakukan adalah membuka file index.html dan menambahkan tag di dalam section head untuk memanggil file js/croot.js.
+```html
+<script type="module" src="js/croot.js"></script>
+```
+![image](https://user-images.githubusercontent.com/11188109/224804727-4e5bf910-a563-4d38-85b9-6acb3a24f5df.png)
+
+
+Kita ambil script TR Tabel HTML yang kemudian kita taruh di file table.js yang di deklarasikan ke dalam variabel tr.
 
 ![image](https://user-images.githubusercontent.com/11188109/224797531-a0354504-2050-44a5-9d6b-3e2ff2772ff8.png)
 
