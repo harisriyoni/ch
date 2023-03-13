@@ -87,4 +87,25 @@ Simpan, commit dan push ke heroku kemudian kita ujicoba lagi front end kita. Lia
 
 ![image](https://user-images.githubusercontent.com/11188109/224811597-f1c34899-ab79-4ce0-b87b-8f4354da97ad.png)
 
+Karena hasil dari backend berupa array dari json object. maka kita ubah kode program tambahkan looping foreach pada croot.js
+```js
+import { get } from "https://jscroot.github.io/api/croot.js";
+import { setInner } from "https://jscroot.github.io/element/croot.js";
 
+let URLPresensi = "https://gocroot.herokuapp.com/presensi";
+
+get(URLPresensi,isiTablePresensi);
+
+function isiTablePresensi(results){
+    console.log(results);
+    results.forEach(isiRow);
+}
+
+function isiRow(value){
+    console.log(value)
+}
+
+
+
+setInner("namadivisi","Dari croot.js");
+```
