@@ -10,15 +10,7 @@ Adapun langkah yang akan kita lakukan :
 # Kontainer Tabel
 
 Pertama pakai frontend yang sudah kemaren kita buat, deploy di repo kampus. Kita buat di dalam kontainer sebuah tabel untuk mengkonsumsi API.
+Contoh frontend : https://github.com/adorableproject/presensi
 
 
 
-![image](https://user-images.githubusercontent.com/11188109/214906570-fdf8403b-e82d-41ec-a61a-3a8918eb97fb.png)
-
-go mod init chapter01
-
-go get github.com/gofiber/fiber/v2
-
-github.com/gofiber/websocket/v2
-
-ws://127.0.0.1:3000/ws
