@@ -81,7 +81,8 @@ kemudian kita akses url github pages nya. Kita lakukan inspect dan masuk ke tab 
 
 ![image](https://user-images.githubusercontent.com/11188109/224802984-7d9bad9e-1390-4e63-a317-6becf62a670d.png)
 
-Artinya kita perlu mendaftarkan url 'https://adorableproject.github.io' ke dalam config cors.go di backend 'https://gocroot.herokuapp.com/presensi'.
+Artinya kita perlu mendaftarkan url 'https://adorableproject.github.io' ke dalam config cors.go di repo backend 'https://gocroot.herokuapp.com/presensi'.
 
+![image](https://user-images.githubusercontent.com/11188109/224807482-5ab9ef55-33d3-42d7-8f65-699372aebc77.png)
 
-
+Simpan, commit dan push ke heroku kemudian kita ujicoba lagi front end kita.
