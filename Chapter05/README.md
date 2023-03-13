@@ -63,13 +63,11 @@ import { get } from "https://jscroot.github.io/api/croot.js";
 import { setInner } from "https://jscroot.github.io/element/croot.js";
 
 let URLPresensi = "https://gocroot.herokuapp.com/presensi";
-const hasil={};
 
 get(URLPresensi,isiTablePresensi);
 
 function isiTablePresensi(results){
     console.log(results);
-    hasil=results;
 }
 setInner("namadivisi","Dari croot.js");
 ```
@@ -85,4 +83,8 @@ Artinya kita perlu mendaftarkan url 'https://adorableproject.github.io' ke dalam
 
 ![image](https://user-images.githubusercontent.com/11188109/224807482-5ab9ef55-33d3-42d7-8f65-699372aebc77.png)
 
-Simpan, commit dan push ke heroku kemudian kita ujicoba lagi front end kita.
+Simpan, commit dan push ke heroku kemudian kita ujicoba lagi front end kita. Liat console kembali sudah terlihat hasil dari backend
+
+![image](https://user-images.githubusercontent.com/11188109/224811597-f1c34899-ab79-4ce0-b87b-8f4354da97ad.png)
+
+
