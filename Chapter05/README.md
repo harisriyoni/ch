@@ -109,3 +109,9 @@ function isiRow(value){
 
 setInner("namadivisi","Dari croot.js");
 ```
+Hasilnya kita dapatkan object yang keluar dari consol.log fungsi isiRow
+
+![image](https://user-images.githubusercontent.com/11188109/224831618-a416f2cf-7902-429d-8c76-651d1f1edca4.png)
+
+Sekarang kita masukkan ke dalam tabel. kita ubah croot.js lagi menjadi
+
