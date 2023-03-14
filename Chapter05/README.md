@@ -234,3 +234,14 @@ export let presensiContent=`
 </th>
 `
 ```
+
+## Kerjakan
+* Buatlah frontend yang sudah sesuai dengan aturan boiler plate JSCroot:
+  * Terdiri dari 3 folder yaitu template, controller dan config.(30)
+  * setting CORS untuk akses dari github pages (10)
+  * Sudah bisa diakses dengan github pages (10)
+  * menampilkan data dari backend yang dibuat(30) 
+  * Pull Request Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan (20)
+* Pull Request ke repo ini dengan Judul 5-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter04/KELAS/NPM/ yang berisi :
+  * URL github pages fork dan asli 
+  * Skrinsutan dari frontend yang sudah berhasil mengambil data dari backend
