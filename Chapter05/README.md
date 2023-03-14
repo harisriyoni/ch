@@ -120,7 +120,7 @@ Sekarang kita masukkan ke dalam tabel. Sebelumnya edit index.html tambahkan id p
 kita ubah croot.js lagi menjadi
 ```js
 import { get } from "https://jscroot.github.io/api/croot.js";
-import { setInner, addInner,addChild } from "https://jscroot.github.io/element/croot.js";
+import {setInner,addChild } from "https://jscroot.github.io/element/croot.js";
 import {getRandomColor,getRandomColorName} from "https://jscroot.github.io/image/croot.js";
 import {presensiTag,presensiClass,presensiContent} from "./template/table.js"
 
