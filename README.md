@@ -16,14 +16,14 @@ Materi Kuliah Web Service, akses github pages : https://universitas.bukupedia.co
 | 1214005   | Muhammad Rafi Al Azhim | 100 | 0 |
 | 1214007   | Ratu SukmaKomala | 100 | 0 |
 | 1214008   | Muhammad Syahid Al Fajri | 100 | 0 |
-| 1214010   | shahiezaalfadiashauqie | 100 | 0 |
+| 1214010   | shahiezaalfadiashauqie | 100 | 90 |
 | 1214011   | Daslan Josua Valentino Siahaan | 50 | 0 |
 | 1214012   | Jasmine Mutiara Bintang | 100 | 60 |
 | 1214017   | Rofi Nafiis Zain | 100 | 100 |
 | 1214020   | Farhan Rizki M | 100 | 0 |
 | 1214022   | Gilar Wahibul Azhar | 100 | 0 |
 | 1214024   | Farhan Riziq | 50 | 0 |
-| 1214027   | Gabriella Youzanna Rorong | 100 | 60 |
+| 1214027   | Gabriella Youzanna Rorong | 100 | 90 |
 | 1214030   | Fahad Abdul Aziz | 100 | 0 |
 | 1214033   | Isnaenti Nur Latifah | 100 | 0 |
 | 1214041   | Muhammad Faisal Ashshidiq | 50 | 60 |
