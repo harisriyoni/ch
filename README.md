@@ -39,7 +39,6 @@ Pelaku delete file orang :
 | ------ | ------ | ------ | ------ |
 |1.| 1214018 | Hilal Dzakwan | https://github.com/bukped/ws/commit/41b5b0a1c18ecea40e70c4eaab8fb8d49262c2e3 |
 |2.| 1214018 | Hilal Dzakwan | https://github.com/bukped/ws/commit/4dceb173dbbe8f080543dac9f94867b0db41e603 |
-|3.| 1214010 | Gabriella | Pull REquest hapus semua kerjaan teman|
 
 petunjuk ngonten : https://kampus.awangga.net/standar/standar-konten-bukupedia-university
 
