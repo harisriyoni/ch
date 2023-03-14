@@ -97,7 +97,10 @@ Sekarang kita masukkan ke dalam tabel. Sebelumnya edit index.html tambahkan id p
 <table class="w-full" id="presensi">
 ```
 
-Kita ambil script TR Tabel HTML yang kemudian kita taruh di file table.js yang di deklarasikan ke dalam variabel tr.
+Kita ambil script TR Tabel HTML yang kemudian kita taruh di file table.js yang di deklarasikan ke dalam variabel presensiTag,presensiClass dan presensiContent.
+* presensiTag : berisi tag yang digunakan untuk row table, disini menggunakan tag tr
+* presensiClass : nilai value dari class yang ada di presensiTag
+* presensiContent : isi didalam presensiTag.
 
 ![image](https://user-images.githubusercontent.com/11188109/224797531-a0354504-2050-44a5-9d6b-3e2ff2772ff8.png)
 
