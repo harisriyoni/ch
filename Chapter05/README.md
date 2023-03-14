@@ -141,3 +141,7 @@ function isiRow(value){
 
 setInner("namadivisi","Dari croot.js");
 ```
+jadilah tabel presensi karyawan sudah terisi
+
+![image](https://user-images.githubusercontent.com/11188109/224889495-d6271680-eba6-4485-8e81-09ac18ab9841.png)
+
