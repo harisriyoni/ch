@@ -242,6 +242,6 @@ export let presensiContent=`
   * Sudah bisa diakses dengan github pages (10)
   * menampilkan data dari backend yang dibuat(30) 
   * Pull Request Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan (20)
-* Pull Request ke repo ini dengan Judul 5-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter04/KELAS/NPM/ yang berisi :
+* Pull Request ke repo ini dengan Judul 5-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter05/KELAS/NPM/ yang berisi :
   * URL github pages fork dan asli 
   * Skrinsutan dari frontend yang sudah berhasil mengambil data dari backend
