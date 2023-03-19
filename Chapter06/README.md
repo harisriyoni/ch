@@ -1,4 +1,14 @@
 # Debug Aplikasi
+
+## Pre Test on Class (Waktu 30 Menit)
+* Ubahlah frontend form dari Chapter 2 menggunakan library jscroot dan sesuai dengan aturan boiler plate JSCroot:
+  * Folder js, terdiri dari 3 folder yaitu template, controller dan config (30)
+  * URL POST menggunakan backend sendiri, bukan menggunakan pipedream (40)
+  * menampilkan respon dari backend yang dibuat setelah klik submit (30) 
+* Presentasikan dan langsung mendapat penilaian di kelas. Setiap keterlambatan 15 menit akan ada diskon nilai sebanyak 5 poin.
+
+## Penggunaan Inspect Element
+
 Pada sesi ini kita akan mencoba melakukan debugging dari aplikasi yang sudah kita buat. Alat yang dibutuhkan cukup browser google chrome. Kita akan menggunakan Inspect Element. Sebagai contoh kita buka https://adorableproject.github.io/presensi/ klik kanan masuk ke menu Inspect
 
 ![image](https://user-images.githubusercontent.com/11188109/226216392-5f69a5ab-0db1-4fa0-82a9-37b9540805a6.png)
