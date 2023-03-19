@@ -6,6 +6,7 @@
   * URL POST menggunakan backend sendiri, bukan menggunakan pipedream (40)
   * menampilkan respon dari backend yang dibuat setelah klik submit (30) 
 * Presentasikan dan langsung mendapat penilaian di kelas. Setiap keterlambatan 15 menit akan ada diskon nilai sebanyak 5 poin.
+* Gunakan Inspect Element untuk kepentingan debug, gunakan hard refresh(shift+F5) setiap ada perubahan kode javascript.
 
 ## Penggunaan Inspect Element
 
@@ -34,7 +35,7 @@ Terdapat 5 Buah tab disana yaitu :
 
 Yang kemudian akan kita jelaskan satu per satu maksud dari setiap tab tersebut.
 
-## Headers
+### Headers
 
 ![image](https://user-images.githubusercontent.com/11188109/226216819-9e0b2990-fdbd-4b87-a4dc-6cba5dbfcc4c.png)
 
@@ -43,25 +44,25 @@ Pada tab Headers terdapat 3 section yaitu :
 * Response Headers : Header Respon dari Backend
 * Request Headers : Header Request dari Frontend
 
-## Preview
+### Preview
 
 ![image](https://user-images.githubusercontent.com/11188109/226216827-129f0328-061a-4c1c-aa55-b94ba8015ccd.png)
 
 Berisi data yang dikirimkan dari backend yang sudah berbentuk rapih
 
-## Response
+### Response
 
 ![image](https://user-images.githubusercontent.com/11188109/226216882-6ce048e6-726d-4a67-a3bb-3acf907abbab.png)
 
 Berisi raw data yang dikirimkan dari backend
 
-## Initiator
+### Initiator
 
 ![image](https://user-images.githubusercontent.com/11188109/226216923-5f611ce7-62d3-49b8-9300-9f11e11e3add.png)
 
 Berisi nama fungsi yang memanggil aksi pemanggilan ke backend, beserta runutan posisi file dari awal hingga pemanggilan.
 
-## Duration
+### Duration
 
 ![image](https://user-images.githubusercontent.com/11188109/226216967-75228a6a-0838-4b5a-8fb4-dd256e364482.png)
 
