@@ -69,6 +69,19 @@ In this section explain how wauth.js works, this section need if you want to be 
 
 Pada bagian backend kita siapkan database user, dan setting dari controller whatsauth yang sudah ada di boilerplate iteung.
 
+Setiap controller yang sudah dibuat, tambahkan otorisasi dengan menangkap paseto pada header
+```go
+h := new(Header)
+if err := c.ReqHeaderParser(h); err != nil {
+    return err
+}
+phone, err := watoken.Decode(config.PublicKey, h.Login)
+if err != nil {
+    return err
+}
+
+```
+
 ## Kerjakan
 * Implementasikan Whatsauth di repo masing masing pada bagian depan github pages masing masing repo (30)
 * Setiap frontend yang buat akan mengecek cookie whatsauth, jika tidak terdapat cookie PASETO maka akan di redirect ke halaman login whatsauth (30)
