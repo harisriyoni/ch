@@ -73,13 +73,7 @@ Pada bagian backend kita siapkan database user, dan setting dari controller what
 * Implementasikan Whatsauth di repo masing masing pada bagian depan github pages masing masing repo (30)
 * Setiap frontend yang buat akan mengecek cookie whatsauth, jika tidak terdapat cookie PASETO maka akan di redirect ke halaman login whatsauth (30)
 * Setiap controller di backend sudah dilengkapi dengan pengecekan header PASETO (30)
-Buatlah frontend yang sudah sesuai dengan aturan boiler plate JSCroot:
-  * Terdiri dari 3 folder yaitu template, controller dan config.(30)
-  * setting CORS untuk akses dari github pages (10)
-  * Sudah bisa diakses dengan github pages (10)
-  * menampilkan data dari backend yang dibuat(30) 
-  * Pull Request Frontend ditaruh di repo https://github.com/gocroot/app sesuaikan dengan folder topik pekerjaan (20)
 * Pull Request ke repo ini dengan Judul 7-KELAS-NPM-NAMA, menyertakan file README.md dalam folder Chapter07/KELAS/NPM/ yang berisi :
   * Daftar URL github pages frontend 
   * URL laman depan github pages dengan whatsauth
-  Skrinsutan dari frontend yang sudah berhasil mengambil data dari backend
+  * Skrinsutan dari setiap url frontend yang sudah berhasil 
