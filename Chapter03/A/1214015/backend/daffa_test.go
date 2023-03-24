@@ -69,6 +69,6 @@ func TestInsertProgramKursus(t *testing.T) {
 	}
 	insertedID := InsertProgramkursus(dbname, programkursus)
 	if insertedID == nil {
-		t.Error("Failed to insert ProgramKursus")
+		t.Error("Failed to insert programKursus")
 	}
 }
