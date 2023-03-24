@@ -59,16 +59,16 @@ func TestInsertPengumuman(t *testing.T) {
 		t.Error("Failed to insert pengumuman")
 	}
 }
-func TestInsertKursus(t *testing.T) {
+func TestInsertProgramKursus(t *testing.T) {
 	dbname := "proyek2"
-	kursus := Kursus{
+	programkursus := Programkursus{
 		ID:             primitive.NewObjectID(),
 		Nama_kursus:    "FIGHTING GAME",
 		Jenjang_kursus: "Program 3",
 		Pengajar:       "Jon Snow",
 	}
-	insertedID := InsertKursus(dbname, kursus)
+	insertedID := InsertProgramkursus(dbname, programkursus)
 	if insertedID == nil {
-		t.Error("Failed to insert kursus")
+		t.Error("Failed to insert ProgramKursus")
 	}
 }
