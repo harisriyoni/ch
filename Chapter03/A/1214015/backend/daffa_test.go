@@ -49,6 +49,7 @@ func TestInsertPembayaran(t *testing.T) {
 func TestInsertPengumuman(t *testing.T) {
 	dbname := "proyek2"
 	pengumuman := Pengumuman{
+		ID:            primitive.NewObjectID(),
 		Hasil_seleksi: "LULUS",
 		Nilai:         "97",
 		Program:       "Fighting",
@@ -61,12 +62,13 @@ func TestInsertPengumuman(t *testing.T) {
 func TestInsertKursus(t *testing.T) {
 	dbname := "proyek2"
 	kursus := Kursus{
+		ID:             primitive.NewObjectID(),
 		Nama_kursus:    "FIGHTING GAME",
 		Jenjang_kursus: "Program 3",
 		Pengajar:       "Jon Snow",
 	}
 	insertedID := InsertKursus(dbname, kursus)
 	if insertedID == nil {
-		t.Error("Failed to insert programkursus")
+		t.Error("Failed to insert kursus")
 	}
 }
