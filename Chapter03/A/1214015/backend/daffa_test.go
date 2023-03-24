@@ -38,8 +38,8 @@ func TestInsertPembayaran(t *testing.T) {
 	dbname := "proyek-2"
 	pembayaran := Pembayaran{
 		ID:          primitive.NewObjectID(),
-		Status:      "92348927348",
-		Total_bayar: "72619873972094293",
+		Status:      "Dibayar",
+		Total_bayar: "200,000",
 	}
 	insertedID := InsertPembayaran(dbname, pembayaran)
 	if insertedID == nil {
