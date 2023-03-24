@@ -58,7 +58,7 @@ func TestInsertPengumuman(t *testing.T) {
 		t.Error("Failed to insert pengumuman")
 	}
 }
-func TestInsertkursus(t *testing.T) {
+func TestInsertKursus(t *testing.T) {
 	dbname := "proyek2"
 	kursus := Kursus{
 		Nama_kursus:    "FIGHTING GAME",
