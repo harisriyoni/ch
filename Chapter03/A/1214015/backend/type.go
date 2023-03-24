@@ -33,7 +33,7 @@ type Pengumuman struct {
 	Program       string             `bson:"program" json:"program"`
 }
 
-type Programkursus struct {
+type Kursus struct {
 	ID             primitive.ObjectID `bson:"_id,omitempty" json:"id"`
 	Nama_kursus    string             `bson:"nama_kursus" json:"nama_kursus"`
 	Jenjang_kursus string             `bson:"jenjang_kursus" json:"jenjang_kursus"`

@@ -7,7 +7,7 @@ import (
 )
 
 func TestInsertUser(t *testing.T) {
-	dbname := "proyek2"
+	dbname := "proyek-2"
 	user := User{
 		ID:     primitive.NewObjectID(),
 		Nama:   "Arya",
@@ -21,7 +21,7 @@ func TestInsertUser(t *testing.T) {
 }
 
 func TestInsertPendaftaran(t *testing.T) {
-	dbname := "proyek2"
+	dbname := "proyek-2"
 	pendaftaran := Pendaftaran{
 		ID:         primitive.NewObjectID(),
 		Nama_siswa: "Arya",
@@ -35,7 +35,7 @@ func TestInsertPendaftaran(t *testing.T) {
 }
 
 func TestInsertPembayaran(t *testing.T) {
-	dbname := "proyek2"
+	dbname := "proyek-2"
 	pembayaran := Pembayaran{
 		ID:          primitive.NewObjectID(),
 		Status:      "92348927348",
@@ -47,7 +47,7 @@ func TestInsertPembayaran(t *testing.T) {
 	}
 }
 func TestInsertPengumuman(t *testing.T) {
-	dbname := "proyek2"
+	dbname := "proyek-2"
 	pengumuman := Pengumuman{
 		ID:            primitive.NewObjectID(),
 		Hasil_seleksi: "LULUS",
@@ -59,16 +59,16 @@ func TestInsertPengumuman(t *testing.T) {
 		t.Error("Failed to insert pengumuman")
 	}
 }
-func TestInsertProgramKursus(t *testing.T) {
-	dbname := "proyek2"
-	programkursus := Programkursus{
+func TestInsertKursus(t *testing.T) {
+	dbname := "proyek-2"
+	kursus := Kursus{
 		ID:             primitive.NewObjectID(),
 		Nama_kursus:    "FIGHTING GAME",
 		Jenjang_kursus: "Program 3",
 		Pengajar:       "Jon Snow",
 	}
-	insertedID := InsertProgramkursus(dbname, programkursus)
+	insertedID := InsertKursus(dbname, kursus)
 	if insertedID == nil {
-		t.Error("Failed to insert programkursus")
+		t.Error("Failed to insert kursus")
 	}
 }

@@ -54,10 +54,10 @@ func InsertPengumuman(db string, pengumuman Pengumuman) (insertedID interface{})
 	}
 	return insertResult.InsertedID
 }
-func InsertProgramkursus(db string, programkursus Programkursus) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection("Programkursus").InsertOne(context.TODO(), programkursus)
+func InsertKursus(db string, kursus Kursus) (insertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("kursus").InsertOne(context.TODO(), kursus)
 	if err != nil {
-		fmt.Printf("InsertProgramKursus: %v\n", err)
+		fmt.Printf("InsertKursus: %v\n", err)
 	}
 	return insertResult.InsertedID
 }
