@@ -1,14 +1,12 @@
-import { postWithToken, get } from "https://jscroot.github.io/api/croot.js";
+import { postWithToken} from "https://jscroot.github.io/api/croot.js";
 import { Urlpost } from "../config/url";
-import { data } from "../template/temp";
+import { formData } from "../template/temp"; 
+import { setInner } from "https://jscroot.github.io/element/croot.js";
+setInner("namadivisi","Dari croot.js");
 
-function pushbutton(){
-
-    function AmbilResponse(result) {
-        console.log(result);
-        alert('Data berhasil disimpan!');
-    }
-
-    postWithToken(Urlpost, "Token", "tokenrofi", data, AmbilResponse)
-
-};  
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    postWithToken(Urlpost, "Token", "tokenrofi", formData, AmbilResponse)
+    Postdata(formData);
+    resetform();
+  })

@@ -10,7 +10,6 @@
 
   function Postdata(formData){
     var myHeaders = new Headers();
-    myHeaders.append("Token", "rofiganteng");
     myHeaders.append("Content-Type", "application/json");
 
     var object = {};
