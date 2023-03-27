@@ -1,10 +1,11 @@
-package gilar
+package ckbackend
 
 import (
 	"context"
 	"fmt"
 	"os"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -60,4 +61,69 @@ func InsertContacus(db string, contacus Contacus) (insertedID interface{}) {
 		fmt.Printf("InsertContacus: %v\n", err)
 	}
 	return insertResult.InsertedID
+}
+func GetDataDosen(stats string) (data []Dosen) {
+	user := MongoConnect("tablerps").Collection("dosen")
+	filter := bson.M{"Jabatan": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetDataDosen :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
+}
+func GetDataAbout(stats string) (data []About) {
+	user := MongoConnect("tablerps").Collection("about")
+	filter := bson.M{"pertanyaan": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetDataAbout :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
+}
+func GetDataContacus(stats string) (data []Contacus) {
+	user := MongoConnect("tablerps").Collection("contacus")
+	filter := bson.M{"phone_number": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetDataContacus :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
+}
+func GetDataDashboard(stats string) (data []Dashboard) {
+	user := MongoConnect("tablerps").Collection("dashboard")
+	filter := bson.M{"Location": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetDataDashboard :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
+}
+func GetDataMahasiswa(stats string) (data []Mahasiswa) {
+	user := MongoConnect("tablerps").Collection("mahasiswa")
+	filter := bson.M{"email_mhs": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetDataMahasiswa :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
 }
