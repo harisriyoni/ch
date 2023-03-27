@@ -5,31 +5,32 @@ Materi Kuliah Web Service, akses github pages : https://universitas.bukupedia.co
 
 1. https://universitas.bukupedia.co.id/ws/Chapter01/site/1214001/
 2. https://universitas.bukupedia.co.id/ws/Chapter02/A/NPM/
+3. https://universitas.bukupedia.co.id/ws/Chapter03/A/NPM/frontend/#
 
 ## Daftar Nilai 
 
-| NPM      | Nama | 1 | 2 |
-| ----------- | ----------- | ----------- | ----------- |
-| 1214001      | MARJUNIATI PUTRI | 50 | 0 |
-| 1214002   | Ludha Hardeka | 100 | 0 |
-| 1214003   | Ardiva Putri Tava P | 100 | 0 |
-| 1214005   | Muhammad Rafi Al Azhim | 100 | 0 |
-| 1214007   | Ratu SukmaKomala | 100 | 0 |
-| 1214008   | Muhammad Syahid Al Fajri | 100 | 0 |
-| 1214010   | shahiezaalfadiashauqie | 100 | 90 |
-| 1214011   | Daslan Josua Valentino Siahaan | 50 | 0 |
-| 1214012   | Jasmine Mutiara Bintang | 100 | 60 |
-| 1214017   | Rofi Nafiis Zain | 100 | 100 |
-| 1214020   | Farhan Rizki M | 100 | 0 |
-| 1214022   | Gilar Wahibul Azhar | 100 | 0 |
-| 1214024   | Farhan Riziq | 50 | 0 |
-| 1214027   | Gabriella Youzanna Rorong | 100 | 90 |
-| 1214030   | Fahad Abdul Aziz | 100 | 0 |
-| 1214033   | Isnaenti Nur Latifah | 100 | 0 |
-| 1214041   | Muhammad Faisal Ashshidiq | 50 | 60 |
-| 1214047   | Haris Riyoni | 100 | 80 |
-| 1214061   | NIZAR.ABDUL.KHOLIQ | 100 | 90 |
-| 1214076   | Ryaas Ishlah Ramadhan | 100 | 90 |
+| NPM      | Nama | 1 | 2 | 3 | 4 | 5 | 6 |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 1214001      | MARJUNIATI PUTRI | 50 | 0 |  |  |  |
+| 1214002   | Ludha Hardeka | 100 | 0 |  |  |  |
+| 1214003   | Ardiva Putri Tava P | 100 | 0 |  |  |  |
+| 1214005   | Muhammad Rafi Al Azhim | 100 | 0 |  |  |  |
+| 1214007   | Ratu SukmaKomala | 100 | 0 |  |  |  |
+| 1214008   | Muhammad Syahid Al Fajri | 100 | 0 |  |  |  |
+| 1214010   | shahiezaalfadiashauqie | 100 | 90 |  |  |  |
+| 1214011   | Daslan Josua Valentino Siahaan | 50 | 0 |  |  |  |
+| 1214012   | Jasmine Mutiara Bintang | 100 | 60 |  |  |  |
+| 1214017   | Rofi Nafiis Zain | 100 | 100 | 95 |  |  |
+| 1214020   | Farhan Rizki M | 100 | 0 |  |  |  |
+| 1214022   | Gilar Wahibul Azhar | 100 | 0 |  |  |  |
+| 1214024   | Farhan Riziq | 50 | 0 |  |  |  |  |
+| 1214027   | Gabriella Youzanna Rorong | 100 | 90 |  |  |  |
+| 1214030   | Fahad Abdul Aziz | 100 | 0 |  |  |  |
+| 1214033   | Isnaenti Nur Latifah | 100 | 0 |  |  |  |
+| 1214041   | Muhammad Faisal Ashshidiq | 50 | 60 |  |  |  |
+| 1214047   | Haris Riyoni | 100 | 80 |  |  |  |
+| 1214061   | NIZAR.ABDUL.KHOLIQ | 100 | 90 |  |  |  |
+| 1214076   | Ryaas Ishlah Ramadhan | 100 | 90 |  |  |  |
 
 
 ## Pelakor
