@@ -20,6 +20,6 @@ type DataSudah struct {
 type DataBelum struct {
 	ID           primitive.ObjectID `bson:"_id,omitempty" json:"id,omitempty"`
 	Nama_Mahasiswa string             `bson:"nama_mahasiswa" json:"nama_mahasiswa"`
-	Status   string          `bson:"status" json:"status"`
+	tatus   string          `bson:"status" json:"status"`
 
 }
