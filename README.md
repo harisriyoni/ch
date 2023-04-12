@@ -23,6 +23,7 @@ Materi Kuliah Web Service, akses github pages : https://universitas.bukupedia.co
 | 1214013   | Muhammad Dedi Prasada | 0 | 0 | 0 | 0 | 0 | 0 |
 | 1214015   | Daffa Audya Pramana | 80 | 90 | 100 | 70 | 0 | 0 |
 | 1214017   | Rofi Nafiis Zain | 100 | 100 | 95 | 70 | 100 | 100 |
+| 1214018   | Hilal Fakhri Dzakwan | 70 | 80 | 90 | 0 | 0 | 0 |
 | 1214020   | Farhan Rizki M | 100 | 80 | 50 | 70 | 0 | 0 |
 | 1214021   | Ghifar Damara | 60 | 80 | 50 | 0 | 0 | 0 |
 | 1214022   | Gilar Wahibul Azhar | 100 | 80 | 100 | 0 | 0 | 0 |
