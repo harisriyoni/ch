@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -60,4 +61,49 @@ func InsertAbout(db string, about About) (insertedID interface{}) {
 		fmt.Printf("InsertAbout: %v\n", err)
 	}
 	return insertResult.InsertedID
+}
+
+func GetKaryawan(db string, id interface{}) (*Karyawan, error) {
+	var result Karyawan
+	err := MongoConnect(db).Collection("karyawan").FindOne(context.TODO(), bson.M{"_id": id}).Decode(&result)
+	if err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+func GetHonor(db string, id interface{}) (*Honor, error) {
+	var result Honor
+	err := MongoConnect(db).Collection("honor").FindOne(context.TODO(), bson.M{"_id": id}).Decode(&result)
+	if err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+func GetJob(db string, id interface{}) (*Job, error) {
+	var result Job
+	err := MongoConnect(db).Collection("job").FindOne(context.TODO(), bson.M{"_id": id}).Decode(&result)
+	if err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+func GetTeam(db string, id interface{}) (*Team, error) {
+	var result Team
+	err := MongoConnect(db).Collection("team").FindOne(context.TODO(), bson.M{"_id": id}).Decode(&result)
+	if err != nil {
+		return nil, err
+	}
+	return &result, nil
+}
+
+func GetAbout(db string, id interface{}) (*About, error) {
+	var result About
+	err := MongoConnect(db).Collection("about").FindOne(context.TODO(), bson.M{"_id": id}).Decode(&result)
+	if err != nil {
+		return nil, err
+	}
+	return &result, nil
 }
