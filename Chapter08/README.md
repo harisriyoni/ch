@@ -1,1 +1,7 @@
 # Web Socket
+
+## Tugas 
+1. Buat Aplikasi chatting dengan Web Socket dengan menggunakan fiber v2
+2. Antara front end dan backend dipisah, frontend di github pages. backend di heroku
+3. frontend dibuat custom menggunakan tailwind
+4. Chatting harus menyertakan nama atau username sehingga terlihat siapa yang mengirimkan pesan
