@@ -1,8 +1,8 @@
-module github.com/DaffaAudyaPramana/ws/Chapter03/A/1214015/backend
+module github.com/DaffaAudyaPramana/Chapter03/A/1214015
 
 go 1.20
 
-require go.mongodb.org/mongo-driver v1.11.2
+require go.mongodb.org/mongo-driver v1.11.3
 
 require (
 	github.com/golang/snappy v0.0.1 // indirect

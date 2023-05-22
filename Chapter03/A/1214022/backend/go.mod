@@ -1,8 +1,8 @@
-module github.com/gilarwahibul/ws/Chapter03/A/1214022
+module github.com/GilarYa/1214022
 
 go 1.20
 
-require go.mongodb.org/mongo-driver v1.11.2
+require go.mongodb.org/mongo-driver v1.11.3
 
 require (
 	github.com/golang/snappy v0.0.1 // indirect
