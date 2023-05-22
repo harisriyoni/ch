@@ -6,6 +6,7 @@
 3. frontend dibuat custom menggunakan tailwind
 4. Chatting harus menyertakan nama atau username sehingga terlihat siapa yang mengirimkan pesan
 5. Dikumpulkan disini dengan daftar list alamat front end nya saja
+6. Desain frontend tidak boleh sama
 
 
 ### Pengumpulan
