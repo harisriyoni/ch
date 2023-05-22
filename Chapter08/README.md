@@ -5,3 +5,8 @@
 2. Antara front end dan backend dipisah, frontend di github pages. backend di heroku
 3. frontend dibuat custom menggunakan tailwind
 4. Chatting harus menyertakan nama atau username sehingga terlihat siapa yang mengirimkan pesan
+5. Dikumpulkan disini dengan daftar list alamat front end nya saja
+
+
+### Pengumpulan
+1. Nama | NPM | Link
