@@ -27,12 +27,26 @@ function PushButton(){
     redirect: 'follow'
     };
   
-    fetch("https://eo5cguh95q1w5xc.m.pipedream.net", requestOptions)
-    .then(response => response.text())
-    .then(result => GetResponse(result))
-    .catch(error => console.log('error', error));
-  }
+  //   fetch("https://eo5cguh95q1w5xc.m.pipedream.net", requestOptions)
+  //   .then(response => response.text())
+  //   .then(result => GetResponse(result))
+  //   .catch(error => console.log('error', error));
+  // }
   
-  function GetResponse(result){
-    document.getElementById("formsignup").innerHTML = result;
+  // function GetResponse(result){
+  //   document.getElementById("formsignup").innerHTML = result;
+  // }
+
+  fetch("https://gocrot.herokuapp.com/", requestOptions)
+  .then(response => response.text())
+  .then(result => AmbilResponse(result))
+  .catch(error => console.log('error', error));
+{
+  function AmbilResponse(result) {
+    alert(result)
+    }
+    function resetform(){
+      document.getElementById('form').reset();
+    }
+  }
   }
