@@ -25,3 +25,8 @@ Buatlah video tutorial cara membangun frontend menggunakan JSCroot untuk berinte
 Peringatan :
 
 Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yang berdampak pada ancaman akan ditutupnya akun. Maka mahasiswa tersebut wajib membuat channel penganti dengan viewer, subscriber dan jumlah video yang sama agar bisa mendapatkan penilaian.
+
+## Link Pengumpulan
+
+Tuliskan link pengumpulan di bawah ini :
+1. Nama | NPM | Link Youtube
