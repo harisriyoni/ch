@@ -1,4 +1,4 @@
-# Debug Frontend
+# Debug Backend
 
 Buatlah video tutorial cara melakukan debug backend menggunakan GoCroot/Golang yang sudah dibuat. 
 Setiap mahasiswa menjelaskan minimal 5 kode error untuk di debug yang berbeda.
