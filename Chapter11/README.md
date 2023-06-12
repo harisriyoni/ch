@@ -3,6 +3,9 @@
 Kali ini kita akan membangun aplikasi dengan studi kasus nyata, tugas kalian adalah memporting tampilan aplikasi PHP, menjadi frontend menggunakan JSCroot.
 Aplikasi yang diporting : rtm.ulbi.ac.id
 
+![image](https://github.com/bukped/ws/assets/11188109/af46fb8c-51fe-4229-9e84-fb246c1df7be)
+
+
 ## Ketentuan
 
 1. Dikerjakan dengan pull request ke repo https://github.com/uiteung/rtm
