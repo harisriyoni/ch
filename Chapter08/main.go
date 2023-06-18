@@ -1,9 +1,10 @@
 package main
 
 import (
-	"chapter08/module"
-	"chapter08/url"
 	"log"
+
+	"github.com/ws/chapter08/module"
+	"github.com/ws/chapter08/url"
 
 	"github.com/gofiber/fiber/v2"
 )
