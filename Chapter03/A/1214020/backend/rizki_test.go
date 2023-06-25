@@ -1,51 +1,83 @@
 package rizki
 
 import (
-	"fmt"
 	"testing"
+	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func TestInsertMahasiswa(t *testing.T) {
-	nm := "Farhan Rizki Maulana"
-	npm := "1214020"
-	smt := "4"
-	kls := "2A"
-	prd := "D4 Teknik Informatika"
-	hasil := InsertMahasiswa(nm, npm, smt, kls, prd)
-	fmt.Println(hasil)
-
+	dbname := "presensi"
+	mahasiswa := Mahasiswa{
+		ID:           primitive.NewObjectID(),
+		Nama:         "Farhan Rizki Maulana",
+		NPM:          "1214020",
+		Semester:     "4",
+		Kelas:        "2A",
+		Prodi_kampus: "D4 Teknik Informatika",
+	}
+	insertedID := InsertMahasiswa(dbname, mahasiswa)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
 func TestInsertPresensi(t *testing.T) {
-	khd := "Hadir"
-	ktr := "Masuk"
-	hasil := InsertPresensi(khd, ktr)
-	fmt.Println(hasil)
+	dbname := "presensi"
+	presensi := Presensi{
+		ID:         primitive.NewObjectID(),
+		Datetime:   primitive.NewDateTimeFromTime(time.Now().UTC()),
+		Kehadiran:  "HADIR",
+		Keterangan: "Masuk",
+	}
+	insertedID := InsertPresensi(dbname, presensi)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
 func TestInsertMataKuliah(t *testing.T) {
-	kdmk := "TI41264"
-	nmmk := "Pemrograman 3"
-	sks := "3"
-	jrs := "Teknik Informatika"
-	hasil := InsertMataKuliah(kdmk, nmmk, sks, jrs)
-	fmt.Println(hasil)
+	dbname := "presensi"
+	matakuliah := MataKuliah{
+		ID:      primitive.NewObjectID(),
+		KodeMK:  "TI41264",
+		NamaMK:  "Pemrograman 3",
+		SKS:     "3",
+		Jurusan: "Teknik Informatika",
+	}
+	insertedID := InsertMataKuliah(dbname, matakuliah)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
 func TestInsertJadwalKuliah(t *testing.T) {
-	matkul := "Pemrograman 3"
-	hari := "Senin"
-	jmulai := "13:00"
-	jselesai := "18:00"
-	ruangan := "Lab 314"
-	hasil := InsertJadwalKuliah(matkul, hari, jmulai, jselesai, ruangan)
-	fmt.Println(hasil)
+	dbname := "presensi"
+	jadwalkuliah := JadwalKuliah{
+		ID:         primitive.NewObjectID(),
+		MataKuliah: "Pemrograman 3",
+		Hari:       "Senin",
+		JamMulai:   "13:00",
+		JamSelesai: "18:00",
+		Ruangan:    "Lab 314",
+	}
+	insertedID := InsertJadwalKuliah(dbname, jadwalkuliah)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
 func TestInsertDosen(t *testing.T) {
-	nidn := "0410118609"
-	nama := "Rolly Maulana Awangga,S.T.,MT.,CAIP, SFPC."
-	matkul := "Pemrograman 3"
-	hasil := InsertDosen(nidn, nama, matkul)
-	fmt.Println(hasil)
+	dbname := "presensi"
+	dosen := Dosen{
+		ID:         primitive.NewObjectID(),
+		NIDN:       "0410118609",
+		Nama:       "Rolly Maulana Awangga,S.T.,MT.,CAIP, SFPC.",
+		MataKuliah: "Pemrograman 3",
+	}
+	insertedID := InsertDosen(dbname, dosen)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }

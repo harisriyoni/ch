@@ -4,9 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"time"
 
-	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -29,52 +27,42 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertMahasiswa(nm string, npm string, smt string, kls string, prd string) (InsertedID interface{}) {
-	var mahasiswa Mahasiswa
-	mahasiswa.Nama = nm
-	mahasiswa.NPM = npm
-	mahasiswa.Semester = smt
-	mahasiswa.Kelas = kls
-	mahasiswa.Prodi_kampus = prd
-
-	return InsertOneDoc("dbmahasiswa", "mahasiswa", mahasiswa)
+func InsertMahasiswa(db string, mahasiswa Mahasiswa) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("mahasiswa").InsertOne(context.TODO(), mahasiswa)
+	if err != nil {
+		fmt.Printf("InsertMahasiswa: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-func InsertPresensi(khd string, ktr string) (InsertedID interface{}) {
-	var presensi Presensi
-	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
-	presensi.Kehadiran = khd
-	presensi.Keterangan = ktr
-
-	return InsertOneDoc("dbpresensi", "presensi", presensi)
+func InsertPresensi(db string, presensi Presensi) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("presensi").InsertOne(context.TODO(), presensi)
+	if err != nil {
+		fmt.Printf("InsertPresensi: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-func InsertMataKuliah(kdmk string, nmmk string, sks string, jrs string) (InsertedID interface{}) {
-	var matakuliah MataKuliah
-	matakuliah.KodeMK = kdmk
-	matakuliah.NamaMK = nmmk
-	matakuliah.SKS = sks
-	matakuliah.Jurusan = jrs
-
-	return InsertOneDoc("dbmatakuliah", "matakuliah", matakuliah)
+func InsertMataKuliah(db string, matakuliah MataKuliah) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("matakuliah").InsertOne(context.TODO(), matakuliah)
+	if err != nil {
+		fmt.Printf("InsertMataKuliah: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-func InsertJadwalKuliah(matkul string, hari string, jmulai string, jselesai string, ruangan string) (InsertedID interface{}) {
-	var jadwalkuliah JadwalKuliah
-	jadwalkuliah.MataKuliah = matkul
-	jadwalkuliah.Hari = hari
-	jadwalkuliah.JamMulai = jmulai
-	jadwalkuliah.JamSelesai = jselesai
-	jadwalkuliah.Ruangan = ruangan
-
-	return InsertOneDoc("dbjadwalkuliah", "jadwalkuliah", jadwalkuliah)
+func InsertJadwalKuliah(db string, jadwalkuliah JadwalKuliah) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("jadwalkuliah").InsertOne(context.TODO(), jadwalkuliah)
+	if err != nil {
+		fmt.Printf("InsertJadwalKuliah: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-func InsertDosen(nidn string, nama string, matkul string) (InsertedID interface{}) {
-	var dosen Dosen
-	dosen.NIDN = nidn
-	dosen.Nama = nama
-	dosen.MataKuliah = matkul
-
-	return InsertOneDoc("dbdosen", "dosen", dosen)
+func InsertDosen(db string, dosen Dosen) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("dosen").InsertOne(context.TODO(), dosen)
+	if err != nil {
+		fmt.Printf("InsertDosen: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
