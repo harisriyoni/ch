@@ -1,28 +1,71 @@
 package ryaas
 
 import (
-	"fmt"
 	"testing"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-func TestInsertPresensi(t *testing.T) {
-	long := 98.345345
-	lat := 123.561651
-	lokasi := "rumah"
-	phonenumber := "6811110023231"
-	checkin := "masuk"
-	biodata := Karyawan{
-		Nama:         "ujang",
-		Phone_number: "6284564562",
-		Jabatan:      "tukang sapu",
+func TestInsertLapangan(t *testing.T) {
+	dbname := "lapangan"
+	lapangan := Lapangan{
+		ID:    primitive.NewObjectID(),
+		Nama:  "Lapangan A",
+		Harga: "100000",
 	}
-	hasil := InsertPresensi(long, lat, lokasi, phonenumber, checkin, biodata)
-	fmt.Println(hasil)
-
+	insertedID := InsertLapangan(dbname, lapangan)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
-func TestGetKaryawanFromPhoneNumber(t *testing.T) {
-	phonenumber := "6811110023231"
-	biodata := GetKaryawanFromPhoneNumber(phonenumber)
-	fmt.Println(biodata)
+func TestInsertKategori(t *testing.T) {
+	dbname := "kategori"
+	kategori := Kategori{
+		ID:       primitive.NewObjectID(),
+		Nama:     "Turnamen",
+		Turnamen: "turnamen",
+	}
+	insertedID := InsertKategori(dbname, kategori)
+	if insertedID == nil {
+		t.Error("Failed to insert surat")
+	}
+}
+
+func TestInsertKontak(t *testing.T) {
+	dbname := "kontak"
+	kontak := Kontak{
+		ID:           primitive.NewObjectID(),
+		Nama:         "WAWAN",
+		Phone_number: "62876686833",
+	}
+	insertedID := InsertKontak(dbname, kontak)
+	if insertedID == nil {
+		t.Error("Failed to insert lokasi")
+	}
+}
+
+func TestInsertBank(t *testing.T) {
+	dbname := "bank"
+	bank := Bank{
+		ID:        primitive.NewObjectID(),
+		Nama_Bank: "BNI",
+		Atas_Nama: "Microtron",
+	}
+	insertedID := InsertBank(dbname, bank)
+	if insertedID == nil {
+		t.Error("Failed to insert bank")
+	}
+}
+
+func TestInsertDiskon(t *testing.T) {
+	dbname := "diskon"
+	diskon := Diskon{
+		ID:    primitive.NewObjectID(),
+		Harga: "35000",
+	}
+	insertedID := InsertDiskon(dbname, diskon)
+	if insertedID == nil {
+		t.Error("Failed to insert lokasi")
+	}
 }
