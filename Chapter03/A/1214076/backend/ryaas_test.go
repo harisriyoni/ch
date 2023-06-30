@@ -1,99 +1,71 @@
-package iyasbackend
+package ryaas
 
 import (
-	"fmt"
 	"testing"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-// func TestInsertLapangan(t *testing.T) {
-// 	dbname := "lapangan"
-// 	lapangan := Lapangan{
-// 		ID:    primitive.NewObjectID(),
-// 		Nama:  "Lapangan A",
-// 		Harga: "100000",
-// 	}
-// 	insertedID := InsertLapangan(dbname, lapangan)
-// 	if insertedID == nil {
-// 		t.Error("Failed to insert user")
-// 	}
-// }
-
-// func TestInsertKategori(t *testing.T) {
-// 	dbname := "kategori"
-// 	kategori := Kategori{
-// 		ID:       primitive.NewObjectID(),
-// 		Nama:     "Turnamen",
-// 		Turnamen: "turnamen",
-// 	}
-// 	insertedID := InsertKategori(dbname, kategori)
-// 	if insertedID == nil {
-// 		t.Error("Failed to insert surat")
-// 	}
-// }
-
-// func TestInsertKontak(t *testing.T) {
-// 	dbname := "kontak"
-// 	kontak := Kontak{
-// 		ID:           primitive.NewObjectID(),
-// 		Nama:         "WAWAN",
-// 		Phone_number: "62876686833",
-// 	}
-// 	insertedID := InsertKontak(dbname, kontak)
-// 	if insertedID == nil {
-// 		t.Error("Failed to insert lokasi")
-// 	}
-// }
-
-// func TestInsertBank(t *testing.T) {
-// 	dbname := "bank"
-// 	bank := Bank{
-// 		ID:        primitive.NewObjectID(),
-// 		Nama_Bank: "BNI",
-// 		Atas_Nama: "Microtron",
-// 	}
-// 	insertedID := InsertBank(dbname, bank)
-// 	if insertedID == nil {
-// 		t.Error("Failed to insert bank")
-// 	}
-// }
-
-// func TestInsertDiskon(t *testing.T) {
-// 	dbname := "diskon"
-// 	diskon := Diskon{
-// 		ID:    primitive.NewObjectID(),
-// 		Harga: "35000",
-// 	}
-// 	insertedID := InsertDiskon(dbname, diskon)
-// 	if insertedID == nil {
-// 		t.Error("Failed to insert lokasi")
-// 	}
-// }
-
-func TestGetDataLapangan(t *testing.T) {
-	stats := "Lapangan A"
-	data := GetDataLapangan(stats)
-	fmt.Println(data)
+func TestInsertLapangan(t *testing.T) {
+	dbname := "proyek1"
+	lapangan := Lapangan{
+		ID:    primitive.NewObjectID(),
+		Nama:  "Farhan Rizki Maulana",
+		Harga: "150.000",
+	}
+	insertedID := InsertLapangan(dbname, lapangan)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
-func TestGetDataKategori(t *testing.T) {
-	stats := "Futsal"
-	data := GetDataKategori(stats)
-	fmt.Println(data)
+func TestInsertKategori(t *testing.T) {
+	dbname := "proyek1"
+	kategori := Kategori{
+		ID:       primitive.NewObjectID(),
+		Nama:     "tournament",
+		Turnamen: "tournaments",
+	}
+	insertedID := InsertKategori(dbname, kategori)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
-func TestGetDataKontak(t *testing.T) {
-	stats := "35000"
-	data := GetDataKontak(stats)
-	fmt.Println(data)
+func TestInsertKontak(t *testing.T) {
+	dbname := "proyek1"
+	kontak := Kontak{
+		ID:           primitive.NewObjectID(),
+		Nama:         "WAWAN",
+		Phone_number: "0821247838192",
+	}
+	insertedID := InsertKontak(dbname, kontak)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
 
-func TestGetDataBank(t *testing.T) {
-	stats := "Microtron"
-	data := GetDataBank(stats)
-	fmt.Println(data)
+func TestInsertBank(t *testing.T) {
+	dbname := "proyek1"
+	bank := Bank{
+		ID:        primitive.NewObjectID(),
+		Nama_Bank: "Microtfon",
+		Atas_Nama: "MUSALODON",
+	}
+	insertedID := InsertBank(dbname, bank)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
-func TestGetDataDiskon(t *testing.T) {
-	stats := "0821234123"
-	data := GetDataDiskon(stats)
-	fmt.Println(data)
+
+func TestInsertDiskon(t *testing.T) {
+	dbname := "proyek1"
+	diskon := Diskon{
+		ID:       primitive.NewObjectID(),
+		Dikurang: "35000",
+	}
+	insertedID := InsertDiskon(dbname, diskon)
+	if insertedID == nil {
+		t.Error("Failed to insert user")
+	}
 }
