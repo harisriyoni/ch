@@ -30,19 +30,51 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(phonenumber string, checkin string, biodata Mahasiswa) (InsertedID interface{}) {
+func InsertPresensi(checkin string, id_mhs string) (InsertedID interface{}) {
 	var presensi Presensi
-	presensi.Phone_number = phonenumber
 	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
 	presensi.Checkin = checkin
-	presensi.Biodata = biodata
+	presensi.ID_mhs = id_mhs
 	return InsertOneDoc("dbmhs", "presensi", presensi)
 }
 
-func GetMahasiswaFromPhoneNumber(phone_number string) (staf Presensi) {
-	mahasiswa := MongoConnect("dbmhs").Collection("presensi")
+func InsertMahasiswa(nama string, phone_number string, prodi string, kelas string) (InsertedID interface{}) {
+	var mahasiswa Mahasiswa
+	mahasiswa.Nama = nama
+	mahasiswa.Phone_number = phone_number
+	mahasiswa.Prodi = prodi
+	mahasiswa.Kelas = kelas
+	return InsertOneDoc("dbmhs", "mahasiswa", mahasiswa)
+}
+
+func InsertMatakuliah(nama_matkul string, id_dosen string) (InsertedID interface{}) {
+	var matakuliah Matakuliah
+	matakuliah.Nama_matkul = nama_matkul
+	matakuliah.ID_dosen = id_dosen
+	return InsertOneDoc("dbmhs", "matakuliah", matakuliah)
+}
+
+func InsertDosen(nama_dosen string, npm string) (InsertedID interface{}) {
+	var dosen Dosen
+	dosen.Nama_dosen = nama_dosen
+	dosen.Npm = npm
+	return InsertOneDoc("dbmhs", "dosen", dosen)
+}
+
+func InsertJam_matkul(id_matkul string, jam_masuk string, jam_keluar string) (InsertedID interface{}) {
+	var jam_matkul Jam_matkul
+	jam_matkul.ID_matkul = id_matkul
+	jam_matkul.Jam_masuk = jam_masuk
+	jam_matkul.Jam_keluar = jam_keluar
+	return InsertOneDoc("dbmhs", "Jam_matkul", jam_matkul)
+}
+
+func GetMahasiswaFromPhone(phone_number string) (staf Mahasiswa) {
+	mahasiswa := MongoConnect("dbmhs").Collection("mahasiswa")
+	// filter := bson.M{"phone_number": phone_number}
 	filter := bson.M{"phone_number": phone_number}
 	err := mahasiswa.FindOne(context.TODO(), filter).Decode(&staf)
+	// err := mahasiswa.FindOne(context.TODO(), filter).Decode(&staf)
 	if err != nil {
 		fmt.Printf("getKaryawanFromPhoneNumber: %v\n", err)
 	}
