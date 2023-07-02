@@ -16,4 +16,5 @@ Aplikasi yang diporting : rtm.ulbi.ac.id
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
-1. Nama | NPM | Link Github Pages Tampilan
+1. Rofi Nafiis Zain | 1214017 | https://euis.ulbi.ac.id/rtm/home.html
+2. Nama | NPM | Link Github Pages
