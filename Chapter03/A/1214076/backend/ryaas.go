@@ -4,10 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -30,24 +27,42 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata Karyawan) (InsertedID interface{}) {
-	var presensi Presensi
-	presensi.Latitude = long
-	presensi.Longitude = lat
-	presensi.Location = lokasi
-	presensi.Phone_number = phonenumber
-	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
-	presensi.Checkin = checkin
-	presensi.Biodata = biodata
-	return InsertOneDoc("adorable", "presensi", presensi)
+func InsertLapangan(db string, lapangan Lapangan) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("lapangan").InsertOne(context.TODO(), lapangan)
+	if err != nil {
+		fmt.Printf("InsertLapangan: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
 
-func GetKaryawanFromPhoneNumber(phone_number string) (staf Presensi) {
-	karyawan := MongoConnect("adorable").Collection("presensi")
-	filter := bson.M{"phone_number": phone_number}
-	err := karyawan.FindOne(context.TODO(), filter).Decode(&staf)
+func InsertKategori(db string, kategori Kategori) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("kategori").InsertOne(context.TODO(), kategori)
 	if err != nil {
-		fmt.Printf("getKaryawanFromPhoneNumber: %v\n", err)
+		fmt.Printf("InsertKategori: %v\n", err)
 	}
-	return staf
+	return insertResult.InsertedID
+}
+
+func InsertKontak(db string, kontak Kontak) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("kontak").InsertOne(context.TODO(), kontak)
+	if err != nil {
+		fmt.Printf("InsertKontak: %v\n", err)
+	}
+	return insertResult.InsertedID
+}
+
+func InsertBank(db string, bank Bank) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("bank").InsertOne(context.TODO(), bank)
+	if err != nil {
+		fmt.Printf("InsertBank: %v\n", err)
+	}
+	return insertResult.InsertedID
+}
+
+func InsertDiskon(db string, diskon Diskon) (InsertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("diskon").InsertOne(context.TODO(), diskon)
+	if err != nil {
+		fmt.Printf("InsertDiskon: %v\n", err)
+	}
+	return insertResult.InsertedID
 }
