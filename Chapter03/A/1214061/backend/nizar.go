@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -19,33 +20,58 @@ func MongoConnect(dbname string) (db *mongo.Database) {
 	return client.Database(dbname)
 }
 
-func InsertOneDoc(db string, collection string, doc interface{}) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection(collection).InsertOne(context.TODO(), doc)
+func InsertOneDoc(db *mongo.Database, collection string, doc interface{}) (insertedID interface{}) {
+	insertResult, err := db.Collection(collection).InsertOne(context.TODO(), doc)
 	if err != nil {
 		fmt.Printf("InsertOneDoc: %v\n", err)
 	}
 	return insertResult.InsertedID
 }
-func InsertDataTagihan(db string, datatagihan DataTagihan) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection("datatagihan").InsertOne(context.TODO(),datatagihan)
+func InsertTagihanSPP(db string, tagihanspp TagihanSPP) (insertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("tagihanspp").InsertOne(context.TODO(), tagihanspp)
 	if err != nil {
-		fmt.Printf("InsertDataTagihan: %v\n", err)
+		fmt.Printf("InsertTagihanSPP: %v\n", err)
+	}
+	return insertResult.InsertedID
+}
+func InsertTagihanRegistrasi(db string, tagihanregis TagihanRegistrasi) (insertedID interface{}) {
+	insertResult, err := MongoConnect(db).Collection("tagihanregis").InsertOne(context.TODO(), tagihanregis)
+	if err != nil {
+		fmt.Printf("InsertTagihanRegistrasi: %v\n", err)
 	}
 	return insertResult.InsertedID
 }
 
-func InsertDataSudah(db string, datasudah DataSudah) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection("datasudah").InsertOne(context.TODO(), datasudah)
-	if err != nil {
-		fmt.Printf("InsertDataSudah: %v\n", err)
-	}
-	return insertResult.InsertedID
-}
 
-func InsertDataBelum(db string, databelum DataBelum) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection("databelum").InsertOne(context.TODO(), databelum)
+func InsertMahasiswa(db *mongo.Database, collect string, NamaMahasiswa string, NIM string) (InsertedID interface{}) {
+	var srt Mahasiswa
+	srt.NamaMahasiswa = NamaMahasiswa
+	srt.NIM = NIM
+	return InsertOneDoc(db, collect, srt)
+}
+func GetTagihanRegistrasi(stats string) (data []TagihanRegistrasi) {
+	user := MongoConnect("tagihan").Collection("tagihanregist")
+	filter := bson.M{"semester": stats}
+	cursor, err := user.Find(context.TODO(), filter)
 	if err != nil {
-		fmt.Printf("InsertDataBelum: %v\n", err)
+		fmt.Println("GetTagihanRegistrasi :", err)
 	}
-	return insertResult.InsertedID
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
+}
+func GetTagihanSPP(stats string) (data []TagihanSPP) {
+	user := MongoConnect("tagihan").Collection("tagihanspp")
+	filter := bson.M{"semester": stats}
+	cursor, err := user.Find(context.TODO(), filter)
+	if err != nil {
+		fmt.Println("GetTagihanSPP :", err)
+	}
+	err = cursor.All(context.TODO(), &data)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return
 }
