@@ -1,4 +1,4 @@
-module github.com/FarhanRizkiM/ws/A/1214020/backend
+module github.com/Adeilhampermadi14/ws/Chapter03/A/1194001/backend
 
 go 1.20
 
