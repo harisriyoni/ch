@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"chapter08/module"
+	"chapter02/module"
 	"fmt"
 	"log"
 
@@ -62,8 +62,6 @@ func GetWebSocketId(c *websocket.Conn) {
 			break
 		}
 		log.Printf("Read: %s", msg)
-
-		// module.SendMesssage <- module.Message{Id: id, Message: string(msg)}
 
 		err = c.WriteMessage(mtype, msg)
 		if err != nil {
