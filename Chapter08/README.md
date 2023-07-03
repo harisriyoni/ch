@@ -10,4 +10,5 @@
 
 
 ### Pengumpulan
-1. Nama | NPM | Link
+1. Muhammad Syahid Al Fajri | 1214008 | https://msyahidalfajri.github.io/UI-Websocket/home.html
+2. Nama | NPM | Link
