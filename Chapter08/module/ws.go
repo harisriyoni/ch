@@ -14,7 +14,7 @@ type Client struct {
 type Message struct {
 	Id      string
 	Message string
-} // Add more data to this type if needed
+} // Add more data to this type if needed,
 
 var Clients = make(map[string]*websocket.Conn) // Note: although large maps with pointer-like types (e.g. strings) as keys are slow, using pointers themselves as keys is acceptable and fast
 var Register = make(chan Client)
