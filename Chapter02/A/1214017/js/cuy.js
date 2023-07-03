@@ -10,7 +10,6 @@
 
   function Postdata(formData){
     var myHeaders = new Headers();
-    myHeaders.append("Token", "rofiganteng");
     myHeaders.append("Content-Type", "application/json");
 
     var object = {};
@@ -26,7 +25,7 @@
       redirect: 'follow'
     };
     
-    fetch("https://eo5eqycz367iyvh.m.pipedream.net", requestOptions)
+    fetch("https://gocroot-baru.herokuapp.com/insertjum", requestOptions)
       .then(response => response.text())
       .then(result => AmbilResponse(result))
       .catch(error => console.log('error', error));
