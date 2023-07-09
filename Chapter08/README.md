@@ -11,4 +11,5 @@
 
 ### Pengumpulan
 1. Muhammad Syahid Al Fajri | 1214008 | https://msyahidalfajri.github.io/UI-Websocket/home.html
-2. Nama | NPM | Link
+2. Gilar Wahibul Azhar | 1214022 | https://websocketlar-856131b16035.herokuapp.com/
+3. Nama | NPM | Link
