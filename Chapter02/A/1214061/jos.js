@@ -24,7 +24,7 @@ createAccountBtn.addEventListener("click", function () {
     redirect: "follow",
   };
 
-  fetch("https://eoi6v8ok1i29298.m.pipedream.net", requestOptions)
+  fetch("https://eoxceptd0qflt5b.m.pipedream.net", requestOptions)
     .then((response) => response.text())
     .then((result) => GetResponse(result))
     .catch((error) => console.log("error", error));
