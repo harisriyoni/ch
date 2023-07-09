@@ -3,12 +3,11 @@ package faisal
 import (
     "context"
     "fmt"
-    "os"
     
 
     "go.mongodb.org/mongo-driver/bson"
     "go.mongodb.org/mongo-driver/mongo"
-    "go.mongodb.org/mongo-driver/mongo/options"
+   
 )
 
 type Profile struct {
@@ -27,47 +26,37 @@ type ListData struct{
 }
 
 
-var MongoString string = os.Getenv("MONGOSTRING")
-
-func MongoConnect(dbname string) (db *mongo.Database) {
-	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(MongoString))
-	if err != nil {
-		fmt.Printf("MongoConnect: %v\n", err)
-	}
-	return client.Database(dbname)
-}
-
-func InsertOneDoc(db string, collection string, doc interface{}) (insertedID interface{}) {
-	insertResult, err := MongoConnect(db).Collection(collection).InsertOne(context.TODO(), doc)
+func InsertOneDoc(db *mongo.Database, collection string, doc interface{}) (insertedID interface{}) {
+	insertResult, err := db.Collection(collection).InsertOne(context.TODO(), doc)
 	if err != nil {
 		fmt.Printf("InsertOneDoc: %v\n", err)
 	}
 	return insertResult.InsertedID
 }
 
-func InsertProfile(pendidikan string, username string, bio string, checkin string, biodata Profile) (InsertID interface{}) {
+func InsertProfile(pendidikan string, username string, bio string, checkin string, biodata Profile, db *mongo.Database) (InsertID interface{}) {
     var listdata ListData
     listdata.Pendidikan = pendidikan
     listdata.Username = username
     listdata.Bio = bio
     listdata.Checkin = checkin
     listdata.Biodata = biodata
-    return InsertOneDoc("adorable", "profil", listdata)
+    return InsertOneDoc(db, "profil", listdata)
 }
 
 
-func CreateProfile(username string, fullName string, email string, password string) (insertedID interface{}) {
+func CreateProfile(username string, fullName string, email string, password string, db *mongo.Database, input string) (insertedID interface{}) {
 	profile := Profile{
 		Username: username,
 		FullName: fullName,
 		Email:    email,
 		Password: password,
 	}
-	return InsertOneDoc("mydb", "profiles", profile)
+	return InsertOneDoc(db, input, profile)
 }
 
-func GetProfileByUsername(username string) (profile Profile) {
-	collection := MongoConnect("mydb").Collection("profiles")
+func GetProfileByUsername(username string, db *mongo.Database, input string) (profile Profile) {
+	collection := db.Collection(input)
 	filter := bson.M{"username": username}
 	err := collection.FindOne(context.Background(), filter).Decode(&profile)
 	if err != nil {
@@ -76,8 +65,18 @@ func GetProfileByUsername(username string) (profile Profile) {
 	return profile
 }
 
-func UpdateProfilePassword(username string, newPassword string) {
-	collection := MongoConnect("mydb").Collection("profiles")
+func GetDataProfFromStatus(status string, db *mongo.Database, input string) (profile Profile) {
+	collection := db.Collection(input)
+	filter := bson.M{"status": status}
+	err := collection.FindOne(context.Background(), filter).Decode(&profile)
+	if err != nil {
+		fmt.Printf("GetProfileByUsername: %v\n", err)
+	}
+	return profile
+}
+
+func UpdateProfilePassword(username string, newPassword string, input string, db *mongo.Database) {
+	collection := db.Collection(input)
 	filter := bson.M{"username": username}
 	update := bson.M{"$set": bson.M{"password": newPassword}}
 	_, err := collection.UpdateOne(context.Background(), filter, update)
@@ -86,12 +85,15 @@ func UpdateProfilePassword(username string, newPassword string) {
 	}
 }
 
-func DeleteProfile(username string) {
-	collection := MongoConnect("mydb").Collection("profiles")
-	filter := bson.M{"username": username}
-	_, err := collection.DeleteOne(context.Background(), filter)
-	if err != nil {
-		fmt.Printf("DeleteProfile: %v\n", err)
-	}
+func DeleteProfile(username string, db *mongo.Database, input string) {
+    collection := db.Collection(input)
+    filter := bson.M{"username": username}
+    _, err := collection.DeleteOne(context.Background(), filter)
+    if err != nil {
+        fmt.Printf("DeleteProfile: %v\n", err)
+    }
+    fmt.Println("Berhasil menghapus data Profile.")
 }
+
+//upload
 
