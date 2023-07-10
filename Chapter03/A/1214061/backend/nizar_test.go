@@ -1,48 +1,99 @@
-package main
+package nizar
 
 import (
+	"fmt"
 	"testing"
 
-	"github.com/example/corpo"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-func TestCreateAndGetTagihanByID(t *testing.T) {
-	// Simulate a new tagihan belanja data
-	newTagihan := corpo.Tagihan{
-		Nama:     "Tagihan Belanja",
-		Nominal:  1000000,
-		Tanggal:  "2022-03-05",
-		Dibayar:  false,
-		Pemilik:  "PT. XYZ",
-		Kategori: "Belanja",
-	}
+func TestInsertTagihanRegistrasi(t *testing.T) {
+	dbname := "tagihan"
+	tagihanregis := TagihanRegistrasi{
+		ID:      primitive.NewObjectID(),
+		NamaMahasiswa: "Nizar",
+ 		NIM:           "nizar@gmail.com",
+ 		Semester:      "dua",
+ 		BiayaRegistrasi:      "10000000",
+ 	}
+ 	insertedID := InsertTagihanRegistrasi(dbname, tagihanregis)
+ 	if insertedID == nil {
+ 		t.Error("Failed to insert tagihan")
+ 	}
+ }
+ func TestInsertTagihanSPP(t *testing.T) {
+ 	dbname := "tagihan"
+ 	tagihanspp:= TagihanSPP{
+		ID:      primitive.NewObjectID(),
+ 		NamaMahasiswa: "Nizar",
+ 		NIM:           "nizar@gmail.com",
+ 		Semester:      "dua",
+ 		BiayaSPP:      "10000000",
+ 	}
+ 	insertedID := InsertTagihanSPP(dbname, tagihanspp)
+ 	if insertedID == nil {
+ 		t.Error("Failed to insert tagihan")
+ 	}
+ }
 
-	// Create new tagihan belanja
-	id := corpo.CreateTagihan(newTagihan)
+//  func InsertTagihanSPP(db string, tagihanspp TagihanSPP) (insertedID interface{}) {
+//  	insertResult, err := MongoConnect(db).Collection("tagihanspp").InsertOne(context.TODO(), tagihanspp)
+//  	if err != nil {
+//  		fmt.Printf("InsertTagihanSPP: %v\n", err)
+//  	}
+//  	return insertResult.InsertedID
+//  }
+//  func InsertTagihanRegistrasi(db string, tagihanregis TagihanRegistrasi) (insertedID interface{}) {
+//  	insertResult, err := MongoConnect(db).Collection("tagihanregis").InsertOne(context.TODO(), tagihanregis)
+//  	if err != nil {
+//  		fmt.Printf("InsertTagihanRegistrasi: %v\n", err)
+//  	}
+//  	return insertResult.InsertedID
+//  }
 
-	// Get tagihan belanja by ID
-	result, err := corpo.GetTagihanByID(id.(string))
-	if err != nil {
-		t.Errorf("Error while getting tagihan belanja: %v", err)
-	}
+ //func GetTagihanRegistrasi(stats string) (data []TagihanRegistrasi) {
+ //	user := MongoConnect("tagihan").Collection("tagihanregist")
+// 	filter := bson.M{"semester": stats}
+// 	cursor, err := user.Find(context.TODO(), filter)
+// 	if err != nil {
+// 		fmt.Println("GetTagihanRegistrasi :", err)
+// 	}
+// 	err = cursor.All(context.TODO(), &data)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+// 	return
+// }
+// func GetTagihanSPP(stats string) (data []TagihanSPP) {
+// 	user := MongoConnect("tagihan").Collection("tagihanspp")
+// 	filter := bson.M{"semester": stats}
+// 	cursor, err := user.Find(context.TODO(), filter)
+// 	if err != nil {
+// 		fmt.Println("GetTagihanSPP :", err)
+// 	}
+// 	err = cursor.All(context.TODO(), &data)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+// 	return
+// }
+// func InsertMahaTag(db *mongo.Database, collect string, NamaMahasiswa string, NIM string) (InsertedID interface{}) {
+// 	var srt Mahasiswa
+// 	srt.NamaMahasiswa = NamaMahasiswa
+// 	srt.NIM = NIM
+// 	return InsertOneDoc(db, collect, srt)
+// }
 
-	// Check if result is equal to the newTagihan data
-	if result.Nama != newTagihan.Nama {
-		t.Errorf("Expected nama to be %s, but got %s", newTagihan.Nama, result.Nama)
-	}
-	if result.Nominal != newTagihan.Nominal {
-		t.Errorf("Expected nominal to be %d, but got %d", newTagihan.Nominal, result.Nominal)
-	}
-	if result.Tanggal != newTagihan.Tanggal {
-		t.Errorf("Expected tanggal to be %s, but got %s", newTagihan.Tanggal, result.Tanggal)
-	}
-	if result.Dibayar != newTagihan.Dibayar {
-		t.Errorf("Expected dibayar to be %t, but got %t", newTagihan.Dibayar, result.Dibayar)
-	}
-	if result.Pemilik != newTagihan.Pemilik {
-		t.Errorf("Expected pemilik to be %s, but got %s", newTagihan.Pemilik, result.Pemilik)
-	}
-	if result.Kategori != newTagihan.Kategori {
-		t.Errorf("Expected kategori to be %s, but got %s", newTagihan.Kategori, result.Kategori)
-	}
+func TestGetTagihanRegistrasi(t *testing.T) {
+	stats := "biaya_registrasi"
+	data := GetTagihanRegistrasi(stats)
+	fmt.Println(data)
 }
+
+func TestGetTagihanSPP(t *testing.T) {
+	stats := "biaya_spp"
+	data := GetTagihanSPP(stats)
+	fmt.Println(data)
+}
+
+
