@@ -13,4 +13,5 @@
 1. Muhammad Syahid Al Fajri | 1214008 | https://msyahidalfajri.github.io/UI-Websocket/home.html
 2. Gilar Wahibul Azhar | 1214022 | https://websocketlar-856131b16035.herokuapp.com/
 3. Haris Riyoni | 1214047 | https://harisriyoni3.github.io/websoket-fr/home.html
-4. Nama | NPM | Link
+4. Shahieza Alfadia Shauqie | 1214010 | https://xshazks.github.io/websocket-frontend/home.html 
+5. Nama | NPM | Link
