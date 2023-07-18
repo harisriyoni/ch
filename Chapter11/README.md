@@ -18,5 +18,4 @@ Aplikasi yang diporting : rtm.ulbi.ac.id
 Tuliskan link pengumpulan di bawah ini :
 1. Rofi Nafiis Zain | 1214017 | https://euis.ulbi.ac.id/rtm/home.html
 2. Gilar Wahibul Azhar | 1214022 | https://euis.ulbi.ac.id/rtm/helper.html
-3. Muhammad Syahid Al Fajri | 1214008 | https://msyahidalfajri.github.io/rtm/inputrapat.html
 4. Nama | NPM | Link Github Pages
