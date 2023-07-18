@@ -20,4 +20,8 @@ Tuliskan link pengumpulan di bawah ini :
 2. Gilar Wahibul Azhar | 1214022 | https://euis.ulbi.ac.id/rtm/helper.html
 3. Muhammad Syahid Al Fajri | 1214008 | https://euis.ulbi.ac.id/rtm/inputrapat.html
 4. Shahieza Alfadia Shauqie | 1214010 | https://euis.ulbi.ac.id/rtm/monitorrapat.html
-5. Nama | NPM | Link Github Pages
+
+
+
+8. Ryaas Ishlah Ramadhan | 1214076 | https://euis.ulbi.ac.id/rtm/pengaturanaplikasi.html
+9. Nama | NPM | Link Github Pages
