@@ -20,4 +20,5 @@
 7. Muhammad Faisal Ashshidiq | 1214041 | https://muhammad-faisal-ashshidiq.github.io/fro-chaweket/home.html
 8. Gabriella Youzanna Rorong | 1214027 | https://gabyzanna.github.io/websocket_frontend/home.html
 9. Ardiva Putri Tava Prameswari | 1214003 | https://ardivadiva.github.io/websocket-frontend/awal.html
-10. Nama | NPM | Link
+10. Mochammad Iqbal Ramadhan | 1214086 | https://miqbalramadhan18.github.io/ui-websocketbal/home.html
+11. Nama | NPM | Link
