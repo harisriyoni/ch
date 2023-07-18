@@ -29,4 +29,5 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
+1. Muhammad Faisal Ashshidiq | 1214041 | https://linktw.in/Da9hB0
 1. Nama | NPM | Link Youtube
