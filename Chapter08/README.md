@@ -17,4 +17,7 @@
 5. Daffa Audya Pramana | 1214015 | https://daffaaudyapramana.github.io/ui-websocketdap/home.html
 6. Rofi Nafiis Zain | 1214017 | https://rofinafiin.github.io/UI-Websocket/home.html
 7. Muhammad Faisal Ashshidiq | 1214041 | https://muhammad-faisal-ashshidiq.github.io/fro-chaweket/home.html
+8. Gabriella Youzanna Rorong | 1214027 | https://gabyzanna.github.io/websocket_frontend/home.html 
+9. Nama | NPM | Link
 8. Nama | NPM | Link
+
