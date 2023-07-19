@@ -30,4 +30,5 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 
 Tuliskan link pengumpulan di bawah ini :
 1. Muhammad Faisal Ashshidiq | 1214041 | https://linktw.in/Da9hB0
-1. Nama | NPM | Link Youtube
+2. Rofi Nafiis Zain | 1214017 | https://youtu.be/jvj5CdndOIU
+3. Nama | NPM | Link Youtube
