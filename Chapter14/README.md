@@ -31,4 +31,5 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
-1. Nama | NPM | Link Youtube
+1. Rofi Nafiis Zain | 1214017 | https://youtu.be/qJIGkCIEsSI
+2. Nama | NPM | Link Youtube
