@@ -33,4 +33,6 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 Tuliskan link pengumpulan di bawah ini :
 1. Rofi Nafiis Zain | 1214017 | https://youtu.be/qJIGkCIEsSI
 2. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/ZRypX2oQvlc
-3. Nama | NPM | Link Youtube
+
+4. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
+5. Nama | NPM | Link Youtube
