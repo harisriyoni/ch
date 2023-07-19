@@ -13,7 +13,7 @@ Buatlah video tutorial cara membangun frontend menggunakan JSCroot untuk berinte
 9. Menggunakan judul yang menarik orang untuk mengklik
 10. Menggunakan cover thumbnail resolusi tinggi dan menarik orang meng klik, bisa menggunakan Canva atau tools lainnya
 11. Ada perkenalan nama panggilan (panggilan ajah tanpa nama lengkap apalagi npm) di videonya, contoh : "hallo gaes kali ini kita bahas ... bersama saya udin"
-10. pada deskripsi video tuliskan deskripsi video dan tambahkan nama,NPM,kelas
+12. pada deskripsi video tuliskan deskripsi video dan tambahkan nama,NPM,kelas
 
 ## Nilai Konten
 
@@ -22,6 +22,7 @@ Buatlah video tutorial cara membangun frontend menggunakan JSCroot untuk berinte
 3. per 3 subscriber baru real orang dapat ditukar dengan nilai 30 poin, berlaku kelipatan.
 
 ## Hukuman
+
 Peringatan :
 
 Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yang berdampak pada ancaman akan ditutupnya akun. Maka mahasiswa tersebut wajib membuat channel penganti dengan viewer, subscriber dan jumlah video yang sama agar bisa mendapatkan penilaian.
@@ -29,8 +30,10 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
+
 1. Muhammad Faisal Ashshidiq | 1214041 | https://linktw.in/Da9hB0
 2. Rofi Nafiis Zain | 1214017 | https://youtu.be/jvj5CdndOIU
 3. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/Y1pVSeqd8JA
-4. Daffa Audya Pramana | 1214015 |  https://youtu.be/yiqhpMNGZNQ
-5. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/kK8OP-7Zsa0 
+4. Daffa Audya Pramana | 1214015 | https://youtu.be/yiqhpMNGZNQ
+5. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/kK8OP-7Zsa0
+6. Ardiva Putri Tava Prameswari | 1214003 | https://youtu.be/mOlgGbWhfec
