@@ -39,3 +39,4 @@ Tuliskan link pengumpulan di bawah ini :
 6. Ardiva Putri Tava Prameswari | 1214003 | https://youtu.be/mOlgGbWhfec
 7. Haris Riyoni | 1214047 | https://youtu.be/kiGMd_QJ4z8
 8. Gilar Wahibul Azhar | 1214022 | https://youtu.be/iHgVIhOSd8k
+9. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/gFRceeYgBzI 
