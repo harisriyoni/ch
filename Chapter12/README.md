@@ -15,4 +15,5 @@ Aplikasi yang diporting : rtm.ulbi.ac.id
 Tuliskan link pengumpulan di bawah ini :
 1. Rofi Nafiis Zain | 1214017 | https://github.com/aiteung/rtm/controller (GETDATAUSER, INSERTDATA USER, GET DATA BY PHONE, DELETE DATA USER)
 2. Muhammad Syahid Al Fajri | 1214008 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (INSERT Data Rapat, GET Data Rapat, GET Data Rapat By Agenda, Delete Data Rapat)
-3. Nama | NPM | Link Github fungsi yang dibangun
+3.  Haris Riyoni | 1214047 | github.com/aiteung/rtm/blob/main/controller/controller.go (InsertDataJob,GetDataJob,GetDataJobtitle,DeleteDataJob,DeleteDataJobtitle)
+4. Nama | NPM | Link Github fungsi yang dibangun
