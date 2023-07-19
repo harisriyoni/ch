@@ -25,3 +25,4 @@ Tuliskan link pengumpulan di bawah ini :
 7. Daffa Audya Pramana | 1214015 | https://euis.ulbi.ac.id/rtm/Accounts.html
 8. Muhammad Faisal Ashshidiq | 1214041 | https://euis.ulbi.ac.id/rtm/profile.html
 9. Ardiva Putri Tava Prameswari | 1214003 | https://euis.ulbi.ac.id/rtm/pemkar.html
+10. Haris Riyoni | 1214047 | https://euis.ulbi.ac.id/rtm/jobdesk.html

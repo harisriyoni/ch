@@ -13,4 +13,5 @@ Aplikasi yang diporting : rtm.ulbi.ac.id
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
-1. Nama | NPM | Link Github fungsi yang dibangun
+1. Rofi Nafiis Zain | 1214017 | https://github.com/aiteung/rtm/controller (GETDATAUSER, INSERTDATA USER, GET DATA BY PHONE, DELETE DATA USER)
+2. Nama | NPM | Link Github fungsi yang dibangun
