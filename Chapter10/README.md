@@ -30,5 +30,6 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 
 Tuliskan link pengumpulan di bawah ini :
 1. Muhammad Faisal Ashshidiq | 1214041 | https://linktw.in/Da9hB0
-2. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/Y1pVSeqd8JA
-3. Daffa Audya Pramana | 1214015 |  https://youtu.be/yqGPKw-JKYk
+2. Rofi Nafiis Zain | 1214017 | https://youtu.be/jvj5CdndOIU
+3. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/Y1pVSeqd8JA
+4. Daffa Audya Pramana | 1214015 |  https://youtu.be/yqGPKw-JKYk
