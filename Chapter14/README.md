@@ -40,4 +40,5 @@ Tuliskan link pengumpulan di bawah ini :
 5. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
 6. Gilar Wahibul Azhar | 1214022 | https://youtu.be/El0vl0YoWP4
 7. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/bd99KaAz8Lo 
-8. Nama | NPM | Link Youtube
+8. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/tlK24Oi4buU 
+9. Nama | NPM | Link Youtube

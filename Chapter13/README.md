@@ -39,4 +39,5 @@ Tuliskan link pengumpulan di bawah ini :
 6. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/J9alvC05CsU
 7. Gilar Wahibul Azhar | 1214022 | https://youtu.be/eYg6oojrbkw 
 8. Daffa Audya Pramana | 1214015 | https://youtu.be/uP6cl3Avo0M
-9. Nama | NPM | Link Youtube
+9. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/6fK4xOpUKJ0 
+10. Nama | NPM | Link Youtube
