@@ -37,4 +37,5 @@ Tuliskan link pengumpulan di bawah ini :
 2. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/ZRypX2oQvlc
 3. Haris Riyoni | 1214047 | https://youtu.be/TbOiyghh58I
 4. Nizar Abdul Kholiq | 1214061 | https://youtu.be/SGzs2W1gLQQ
-5. Nama | NPM | Link Youtube
+5. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
+6. Nama | NPM | Link Youtube
