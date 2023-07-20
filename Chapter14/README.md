@@ -38,4 +38,5 @@ Tuliskan link pengumpulan di bawah ini :
 3. Haris Riyoni | 1214047 | https://youtu.be/TbOiyghh58I
 4. Nizar Abdul Kholiq | 1214061 | https://youtu.be/SGzs2W1gLQQ
 5. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
-6. Nama | NPM | Link Youtube
+6. Gilar Wahibul Azhar | 1214022 | https://youtu.be/El0vl0YoWP4
+7. Nama | NPM | Link Youtube
