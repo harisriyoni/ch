@@ -41,3 +41,4 @@ Tuliskan link pengumpulan di bawah ini :
 8. Gilar Wahibul Azhar | 1214022 | https://youtu.be/iHgVIhOSd8k
 9. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/gFRceeYgBzI
 10. Nizar Abdul Kholiq | 1214061 | https://www.youtube.com/watch?v=Sgposkn3oWY
+11. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/SIJ-DstSiG4
