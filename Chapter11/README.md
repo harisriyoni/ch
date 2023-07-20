@@ -27,3 +27,4 @@ Tuliskan link pengumpulan di bawah ini :
 9. Ardiva Putri Tava Prameswari | 1214003 | https://euis.ulbi.ac.id/rtm/pemkar.html
 10. Haris Riyoni | 1214047 | https://euis.ulbi.ac.id/rtm/jobdesk.html
 11. Nizar Abdul Kholiq | 1214061 | https://euis.ulbi.ac.id/rtm/tagihan.html
+12. Farhan Rizki Maulana | 1214020 | https://euis.ulbi.ac.id/rtm/listjobdesk.html
