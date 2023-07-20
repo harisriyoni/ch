@@ -23,3 +23,4 @@ Tuliskan link pengumpulan di bawah ini :
 7. Gabriella Youzanna Rorong | 1214027 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAgendabel, InsertPenjawab, GetDataAgendabel, GetDataPenjawab)
 8. Jasmine Mutiara Bintang | 1214012 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAbsensi, InsertPosisi, GetDataPosisi, GetDataAbsensi)
 9. Ardiva Putri Tava Prameswari | 1214003 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Inserttamu, GetDataKota, GetDataNama, GetDataStatus)
+10. Shahieza Alfadia Shauqie | 1214010 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Insertmonitor, GetDatamonitor, GetDatakaryawan, GetDataproker)
