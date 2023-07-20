@@ -33,4 +33,8 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 Tuliskan link pengumpulan di bawah ini :
 1. Rofi Nafiis Zain | 1214017 | https://youtu.be/ieX1cBxd1dI
 2. Muhammad Faisal Ashshidiq | 1214041 | https://youtu.be/mn56R-aWBP0
-3. Nama | NPM | Link Youtube
+3. Haris Riyoni| 1214047 | https://youtu.be/EXIeIrsXzGI
+4. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/aUeipiUqUvI
+5. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/SIJ-DstSiG4
+6. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/J9alvC05CsU 
+7. Nama | NPM | Link Youtube

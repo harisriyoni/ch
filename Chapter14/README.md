@@ -1,6 +1,6 @@
 # Debug Backend
 
-Buatlah video tutorial cara melakukan debug backend menggunakan GoCroot/Golang yang sudah dibuat. 
+Buatlah video tutorial cara melakukan debug backend menggunakan GoCroot/Golang yang sudah dibuat.
 Setiap mahasiswa menjelaskan minimal 5 kode error untuk di debug yang berbeda.
 dengan Ketentuan :
 
@@ -15,7 +15,7 @@ dengan Ketentuan :
 9. Menggunakan judul yang menarik orang untuk mengklik
 10. Menggunakan cover thumbnail resolusi tinggi dan menarik orang meng klik, bisa menggunakan Canva atau tools lainnya
 11. Ada perkenalan nama panggilan (panggilan ajah tanpa nama lengkap apalagi npm) di videonya, contoh : "hallo gaes kali ini kita bahas ... bersama saya udin"
-10. pada deskripsi video tuliskan deskripsi video dan tambahkan nama,NPM,kelas
+12. pada deskripsi video tuliskan deskripsi video dan tambahkan nama,NPM,kelas
 
 ## Nilai Konten
 
@@ -24,6 +24,7 @@ dengan Ketentuan :
 3. per 3 subscriber baru real orang dapat ditukar dengan nilai 30 poin, berlaku kelipatan.
 
 ## Hukuman
+
 Peringatan :
 
 Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yang berdampak pada ancaman akan ditutupnya akun. Maka mahasiswa tersebut wajib membuat channel penganti dengan viewer, subscriber dan jumlah video yang sama agar bisa mendapatkan penilaian.
@@ -31,8 +32,9 @@ Jika terdapat mahasiswa yang video nya mendapatkan laporan gugatan Copyright yan
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
+
 1. Rofi Nafiis Zain | 1214017 | https://youtu.be/qJIGkCIEsSI
 2. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/ZRypX2oQvlc
-
-4. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
+3. Haris Riyoni | 1214047 | https://youtu.be/TbOiyghh58I
+4. Nizar Abdul Kholiq | 1214061 | https://youtu.be/SGzs2W1gLQQ
 5. Nama | NPM | Link Youtube
