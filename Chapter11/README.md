@@ -28,3 +28,4 @@ Tuliskan link pengumpulan di bawah ini :
 10. Haris Riyoni | 1214047 | https://euis.ulbi.ac.id/rtm/jobdesk.html
 11. Nizar Abdul Kholiq | 1214061 | https://euis.ulbi.ac.id/rtm/tagihan.html
 12. Farhan Rizki Maulana | 1214020 | https://euis.ulbi.ac.id/rtm/listjobdesk.html
+13. Gabriella Youzanna Rorong | 1214027 | https://euis.ulbi.ac.id/rtm/agenda.html 
