@@ -34,4 +34,5 @@ Tuliskan link pengumpulan di bawah ini :
 1. Rofi Nafiis Zain | 1214017 | https://youtu.be/ieX1cBxd1dI
 2. Muhammad Faisal Ashshidiq | 1214041 | https://youtu.be/mn56R-aWBP0
 3. Haris Riyoni| 1214047 | https://youtu.be/EXIeIrsXzGI
-4. Nama | NPM | Link Youtube
+4. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/aUeipiUqUvI
+5. Nama | NPM | Link Youtube
