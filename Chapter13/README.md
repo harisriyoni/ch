@@ -36,5 +36,6 @@ Tuliskan link pengumpulan di bawah ini :
 3. Haris Riyoni| 1214047 | https://youtu.be/EXIeIrsXzGI
 4. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/aUeipiUqUvI
 5. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/SIJ-DstSiG4
-6. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/J9alvC05CsU 
+6. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/J9alvC05CsU
+7. Daffa Audya Pramana | 1214015 |  https://youtu.be/uP6cl3Avo0M
 7. Nama | NPM | Link Youtube
