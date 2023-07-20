@@ -39,4 +39,5 @@ Tuliskan link pengumpulan di bawah ini :
 4. Nizar Abdul Kholiq | 1214061 | https://youtu.be/SGzs2W1gLQQ
 5. Daffa Audya Pramana | 1214015 | https://youtu.be/qjOEstgvd3k
 6. Gilar Wahibul Azhar | 1214022 | https://youtu.be/El0vl0YoWP4
-7. Nama | NPM | Link Youtube
+7. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/bd99KaAz8Lo 
+8. Nama | NPM | Link Youtube
