@@ -35,4 +35,5 @@ Tuliskan link pengumpulan di bawah ini :
 2. Muhammad Faisal Ashshidiq | 1214041 | https://youtu.be/mn56R-aWBP0
 3. Haris Riyoni| 1214047 | https://youtu.be/EXIeIrsXzGI
 4. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/aUeipiUqUvI
-5. Nama | NPM | Link Youtube
+5. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/SIJ-DstSiG4
+6. Nama | NPM | Link Youtube
