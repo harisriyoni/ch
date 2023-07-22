@@ -30,5 +30,5 @@ Tuliskan link pengumpulan di bawah ini :
 12. Farhan Rizki Maulana | 1214020 | https://euis.ulbi.ac.id/rtm/listjobdesk.html
 13. Gabriella Youzanna Rorong | 1214027 | https://euis.ulbi.ac.id/rtm/agenda.html 
 14. Jasmine Mutiara Bintang | 1214012 | https://euis.ulbi.ac.id/rtm/absensi.html
-15. Fahad Abdul Aziz | 1214030 | https://github.com/Fahadabdul17/ws.git
+15. Fahad Abdul Aziz | 1214030 | https://euis.ulbi.ac.id/rtm/grafik_statistik.html
 15. Nama | NPM | Link
