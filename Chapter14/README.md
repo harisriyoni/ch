@@ -43,3 +43,4 @@ Tuliskan link pengumpulan di bawah ini :
 8. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/tlK24Oi4buU
 9. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/TOLS_lYOMrw
 10. Ardiva Putri Tava Prameswari | 1214003 | https://youtu.be/tphuioF8THg
+11. Muhammad Faisal Ashshidiq | 1214041 | https://youtu.be/VmjD6WYWjrw
