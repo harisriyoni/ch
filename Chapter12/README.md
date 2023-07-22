@@ -22,4 +22,6 @@ Tuliskan link pengumpulan di bawah ini :
 6. Gilar Wahibul Azhar | 1214022 | https://github.com/aiteung/rtm/controller (InsertDataCS, GetDataNamaCS, GetDataNegara, DeleteDataNegara, DeleteDataNama)
 7. Gabriella Youzanna Rorong | 1214027 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAgendabel, InsertPenjawab, GetDataAgendabel, GetDataPenjawab)
 8. Jasmine Mutiara Bintang | 1214012 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAbsensi, InsertPosisi, GetDataPosisi, GetDataAbsensi)
-9. Nama | NPM | Link Github fungsi yang dibangun
+9. Ardiva Putri Tava Prameswari | 1214003 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Inserttamu, GetDataKota, GetDataNama, GetDataStatus)
+10. Farhan Rizki Mualana | 1214020 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertDataListJobdesk, GetDataListJobdeskDeskripsi, GetDataListJobdeskDeadline, DeleteDataListJobdeskDeskripsi, DeleteDataListJobdeskDeadline)
+11. Shahieza Alfadia Shauqie | 1214010 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Insertmonitor, GetDatamonitor, GetDatakaryawan, GetDataproker)
