@@ -33,7 +33,7 @@ Materi Kuliah Web Service, akses github pages : https://universitas.bukupedia.co
 | 1214033   | Isnaenti Nur Latifah | 100 | 80 | 85 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 1214041   | Muhammad Faisal Ashshidiq | 85 | 80 | 90 | 70 | 0 | 100 | 0 | 100 | 0 | 85 | 100 | 0 | 90 | 85 |
 | 1214047   | Haris Riyoni | 100 | 80 | 100 | 90 | 90 | 100 | 0 | 100 | 0 | 85 | 100 | 100 | 85 | 85 |
-| 1214061   | Nizar Abdul Kholiq | 100 | 90 | 95 | 80 | 0 | 0 | 0 | 0 | 0 | 85 | 100 | 100 | 0 | 85 |
+| 1214061   | Nizar Abdul Kholiq | 100 | 90 | 95 | 80 | 80 | 0 | 0 | 0 | 0 | 85 | 100 | 100 | 0 | 85 |
 | 1214076   | Ryaas Ishlah Ramadhan | 100 | 90 | 85 | 90 | 90 | 0 | 0 | 100 | 0 | 0 | 100 | 0 | 0 | 0 |
 | 1214086   | Muhammad Iqbal Ramadhan | 85 | 90 | 85 | 90 | 90 | 0 | 0 | 100 | 0 | 0 | 100 | 0 | 0 | 0 |
 
