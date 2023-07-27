@@ -1,4 +1,4 @@
-package faisal
+package profile
 
 import (
 	"fmt"
@@ -40,9 +40,9 @@ var MongoConn = atdb.MongoConnect(MongoInfo)
 // }
 
 func TestInsertProfile(t *testing.T) {
-	username := "Fitrana Soleh"
+	username := "Sidiq martin"
 	bio := "sibuk"
 	pendidikan := "S1"
-	result := InsertProfile(pendidikan, username, bio, "masuk", Profile{FullName: "Fitrana Soleh", Email: "fitrana12@gmail.com"}, MongoConn)
+	result := InsertProfile(pendidikan, username, bio, "masuk", Profile{FullName: "Sidiq Martin", Email: "sidiqmar@gmail.com"}, MongoConn)
 	fmt.Println(result)
 }

@@ -1,4 +1,4 @@
-package faisal
+package profile
 
 import (
     "context"
@@ -96,4 +96,4 @@ func DeleteProfile(username string, db *mongo.Database, input string) {
 }
 
 //upload
-
+//
