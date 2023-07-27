@@ -36,7 +36,9 @@ Tuliskan link pengumpulan di bawah ini :
 3. Muhammad Syahid Al Fajri | 1214008 | https://youtu.be/Y1pVSeqd8JA
 4. Daffa Audya Pramana | 1214015 | https://youtu.be/yiqhpMNGZNQ
 5. Shahieza Alfadia Shauqie | 1214010 | https://youtu.be/kK8OP-7Zsa0
-6. Ardiva Putri Tava Prameswari | 1214003 | https://youtu.be/mOlgGbWhfec
+6. Ardiva Putri Tava Prameswari | 1214003 | https://youtu.be/eM9sxInnMYE
 7. Haris Riyoni | 1214047 | https://youtu.be/kiGMd_QJ4z8
 8. Gilar Wahibul Azhar | 1214022 | https://youtu.be/iHgVIhOSd8k
-9. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/gFRceeYgBzI 
+9. Gabriella Youzanna Rorong | 1214027 | https://youtu.be/gFRceeYgBzI
+10. Nizar Abdul Kholiq | 1214061 | https://www.youtube.com/watch?v=Sgposkn3oWY
+11. Jasmine Mutiara Bintang | 1214012 | https://youtu.be/SIJ-DstSiG4

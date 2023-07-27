@@ -13,8 +13,15 @@ Aplikasi yang diporting : rtm.ulbi.ac.id
 ## Link Pengumpulan
 
 Tuliskan link pengumpulan di bawah ini :
+
 1. Rofi Nafiis Zain | 1214017 | https://github.com/aiteung/rtm/controller (GETDATAUSER, INSERTDATA USER, GET DATA BY PHONE, DELETE DATA USER)
 2. Muhammad Syahid Al Fajri | 1214008 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (INSERT Data Rapat, GET Data Rapat, GET Data Rapat By Agenda, Delete Data Rapat)
-3.  Haris Riyoni | 1214047 | [github.com/aiteung/rtm/blob/main/controller/controller.go ](https://github.com/aiteung/rtm/blob/main/controller/controller.go)(InsertDataJob,GetDataJob,GetDataJobtitle,DeleteDataJob,DeleteDataJobtitle)
+3. Haris Riyoni | 1214047 | [github.com/aiteung/rtm/blob/main/controller/controller.go ](https://github.com/aiteung/rtm/blob/main/controller/controller.go)(InsertDataJob,GetDataJob,GetDataJobtitle,DeleteDataJob,DeleteDataJobtitle)
 4. Daffa Audya Pramana | 1214015 | https://github.com/aiteung/rtm/controller (InsertDataAccounts, GetDataAccounts, GetDataNama, DeleteDataAccounts, DeleteDataNama)
-5. Nama | NPM | Link Github fungsi yang dibangun
+5. Nizar Abdul Kholiq | 1214061 | https://github.com/aiteung/rtm/controller (InsertDataTagihanSPP, GetTagihanSPP, GetTagihanRegistrasi, InsertTagihanRegistrasi, InsertMahasiswa)
+6. Gilar Wahibul Azhar | 1214022 | https://github.com/aiteung/rtm/controller (InsertDataCS, GetDataNamaCS, GetDataNegara, DeleteDataNegara, DeleteDataNama)
+7. Gabriella Youzanna Rorong | 1214027 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAgendabel, InsertPenjawab, GetDataAgendabel, GetDataPenjawab)
+8. Jasmine Mutiara Bintang | 1214012 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertAbsensi, InsertPosisi, GetDataPosisi, GetDataAbsensi)
+9. Ardiva Putri Tava Prameswari | 1214003 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Inserttamu, GetDataKota, GetDataNama, GetDataStatus)
+10. Farhan Rizki Mualana | 1214020 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (InsertDataListJobdesk, GetDataListJobdeskDeskripsi, GetDataListJobdeskDeadline, DeleteDataListJobdeskDeskripsi, DeleteDataListJobdeskDeadline)
+11. Shahieza Alfadia Shauqie | 1214010 | https://github.com/aiteung/rtm/blob/main/controller/controller.go (Insertmonitor, GetDatamonitor, GetDatakaryawan, GetDataproker)
