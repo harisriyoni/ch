@@ -69,7 +69,7 @@ Tambahkan chart, resume dan tabel.
 
 Dalam memilih basis data skala enterprise harus mengacu pada hasil survey [Gartner](https://www.gartner.com/reviews/market/cloud-database-management-systems).Buatlah masing-masing basis data dari studi kasus yang dipilih :
 * [MongoDB](https://www.mongodb.com/)
-* MySQL : https://www.freemysqlhosting.net/, https://www.db4free.net/, https://remotemysql.com/
+* [Supabase](https://supabase.com/)
 
 ## Pengembangan Backend
 
