@@ -282,8 +282,8 @@ go list -m github.com/whatsauth/wasocket@v0.0.1
 # Kerjakan
 
 * Buatlah tampilan frontend sesuai studi kasus, masing-masing individu harus berbeda studi kasus taruh di dalam folder frontend. Frontend minimal memiliki 5 menu, dimana setiap menu menyajikan content/isi container yang berbeda.(nilai 10 per menu/content)
-* Buatlah database mongodb atau MySQL online cloud.
-* Buatlah akun heroku atau GCP atau AWS, gunakan bank digital untuk melakukan verifikasi pembayaran.
+* Buatlah database mongodb atau supabase.
+* Buatlah akun alwaysdata atau GCP atau AWS, gunakan bank digital untuk melakukan verifikasi pembayaran.
 * Aktifkan [GitHub Student Developer Pack](https://education.github.com/pack).
 * Buatlah struct, package, testing, dan publish package mengakses basis data yang sudah dibuat sebelumnya taruh di folder backend.(nilai 5 per type struct dan 5 per fungsi)
 * Github Pages Sudah UP untuk frontend, contoh : https://universitas.bukupedia.co.id/ws/Chapter03/A/NPM/frontend/#
