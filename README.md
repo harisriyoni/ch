@@ -36,11 +36,4 @@ Materi Kuliah Web Service, akses github pages : https://universitas.bukupedia.co
 | 1214061   | Nizar Abdul Kholiq | 100 | 90 | 95 | 80 | 80 | 0 | 0 | 0 | 0 | 85 | 100 | 100 | 0 | 85 |
 | 1214076   | Ryaas Ishlah Ramadhan | 100 | 90 | 85 | 90 | 90 | 0 | 0 | 100 | 0 | 0 | 100 | 0 | 0 | 0 |
 | 1214086   | Muhammad Iqbal Ramadhan | 85 | 90 | 85 | 90 | 90 | 0 | 0 | 100 | 0 | 0 | 100 | 0 | 0 | 0 |
-petunjuk ngonten : https://kampus.awangga.net/standar/standar-konten-bukupedia-university
-![image](https://user-images.githubusercontent.com/11188109/220054134-7d78b3d4-e7b5-4eec-a3c7-271853d1319d.png)
-![image](https://user-images.githubusercontent.com/11188109/220054249-df192e53-a58a-4e35-8a77-3ec8dddb12f5.png)
-![image](https://user-images.githubusercontent.com/11188109/220054328-5b9c4e8b-5a64-483c-9f53-66325c568c47.png)
-![image](https://user-images.githubusercontent.com/11188109/220054380-de60fe89-0460-4981-b134-6c5a922975b1.png)
-
-
 
